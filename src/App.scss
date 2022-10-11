@@ -1,0 +1,153 @@
+@import './styleVariables.scss';
+
+body {
+  overflow: hidden;
+}
+
+@keyframes bg-enter {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+@keyframes background-circle-enter {
+  from {
+    margin-bottom: -1650px;
+  }
+  to {
+    margin-bottom: 0px;
+  }
+  0% {
+    border-color: #d6683f;
+  }
+  50% {
+    border-color: #d6683f;
+  }
+  100% {
+    border-color: #c8afb2;
+  }
+}
+
+@keyframes T-top-enter {
+  from {
+    width: 0px;
+    // margin-left: -100%;
+  }
+  to {
+    width: $T-top-width;
+    // margin-left: $T-top-margin-left;
+  }
+}
+
+@keyframes Vertical-lines-enter {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: $T-top-margin-left;
+  }
+}
+
+@keyframes T-side-enter {
+  from {
+    height: 0;
+    margin-top: -100%;
+  }
+  to {
+    height: $T-side-height;
+    margin-top: $T-side-margin-top;
+  }
+}
+
+
+.tedious_bg {
+  background-color: #6f3f59;
+  background-image: url('./TediousBgImg.jpg');
+  height: 100%;
+  width: 0;
+  width: 100%;
+  background-size: cover;
+}
+
+.divWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background-circle {
+  border-width: 0;
+  border-color: #c8afb2;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 30vh;
+  width: 0;
+  /* position: relative; */
+}
+
+.background-circle-wrapper {
+  position: absolute;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.T-Top {
+  display: flex;
+  border-bottom: 18px solid white;
+  position: absolute;
+  width: $T-top-width;
+  /* top: -87px;
+  left: -327px; */
+  margin-left: $T-top-margin-left;
+    margin-top: -65px;
+}
+
+.VerticalLines:nth-child(1) {
+  margin-top: -105px;
+  width: 500px;
+  border-width: 8px;
+  margin-left: -174px;
+}
+
+
+
+.T-Side {
+  display: flex;
+  border-left: 20px solid white;
+  width: 0;
+  height: $T-side-height;
+  margin-left: -231px;
+  position: absolute;
+  margin-top: $T-side-margin-top;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* .tedious_bg {
+    animation: bg-enter 4s ease-in-out 1s;
+    animation-fill-mode: backwards;
+  } */
+  .background-circle {
+    animation: background-circle-enter 4s ease-in-out 1s;
+    animation-fill-mode: backwards;
+  }
+  .T-Top {
+    animation: T-top-enter 4s ease-out 2s;
+    animation-fill-mode: backwards;
+  }
+  .VerticalLines {
+    animation: Vertical-lines-enter 4s ease-out 2s;
+    animation-fill-mode: backwards;
+  }
+  .T-Side {
+    animation: T-side-enter 4s ease-out 2s;
+    animation-fill-mode: backwards;
+  }
+
+}

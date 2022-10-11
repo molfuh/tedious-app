@@ -1,0 +1,33 @@
+@media screen and (min-width: 660px) and (max-width: 1200px) {
+  .tedious_bg {
+    background-image: unset;
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .tedious_bg {
+    background-image: unset;
+    background-color: red;
+
+  }
+  .background-circle {
+    border-width: 215px;
+  }
+
+  .T-Top {
+    width: 455px;
+    margin-left: -227px;
+  }
+
+  @keyframes T-top-enter {
+    from {
+      width: 0px;
+      margin-left: -100%;
+    }
+    to {
+      width: 455px;
+      margin-left: -227px;
+    }
+  }
+}

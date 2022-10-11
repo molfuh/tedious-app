@@ -1,6 +1,8 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import './AppMediaQuery.scss';
+import './styleVariables.scss';
 import Tedious from './Tedious';
 
 function App() {

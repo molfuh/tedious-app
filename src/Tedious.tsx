@@ -7,15 +7,17 @@ export default function Tedious() {
     <>
       <div className="divWrapper">
         <div className="tedious_bg">
-        {/* <img src={TediousBgImg} className="tedious_bg" alt="background colors"> */}
           <span className="background-circle-wrapper">
             <span className="background-circle">
+              <span className="T-Top" />
+              <span className="T-Side" />
+              <span>
+                <span className="VerticalLines T-Top"></span>
+                <span className="VerticalLines T-Top"></span>
+              </span>
             </span>
           </span>
-          <span className="T-Top" />
-          <span className="T-Side" />
         </div>
-        {/* </img> */}
       </div>
     </>
   )
