@@ -1,4 +1,152 @@
-.App {
+body {
+  overflow: hidden;
+}
+
+@keyframes bg-enter {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+@keyframes background-circle-enter {
+  /* from {
+    border-width: 0px;
+  }
+  to {
+    border-width: 30vh;
+  } */
+  from {
+    margin-bottom: -1650px;
+    /* border-color: #d6683f; */
+  }
+  to {
+    margin-bottom: 0px;
+    /* border-color: #c8afb2; */
+  }
+  0% {
+    border-color: #d6683f;
+  }
+  50% {
+    border-color: #d6683f;
+  }
+  100% {
+    border-color: #c8afb2;
+  }
+  /* from {
+    width: 0px;
+    border-radius: 0;
+  }
+  to {
+    width: 60vh;
+    border-radius: 50%;
+  } */
+}
+
+@keyframes T-top-enter {
+  from {
+    width: 0px;
+    margin-left: 0;
+  }
+  to {
+    width: 417px;
+    margin-left: 97px;
+  }
+}
+
+@keyframes T-side-enter {
+  from {
+    height: 0;
+    margin-top: 0;
+  }
+  to {
+    height: 259px;
+    margin-top: 220px;
+  }
+}
+
+
+
+.tedious_bg {
+  background-color: #6f3f59;
+  background-image: url('./TediousBgImg.jpg');
+  height: 100%;
+  width: 0;
+  width: 100%;
+  background-size: cover;
+}
+
+.divWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.T-Top {
+  display: flex;
+  border-bottom: 9px solid white;
+  width: 0;
+  position: absolute;
+  margin-left: 97px;
+  width: 417px;
+  margin-top: 220px;
+}
+
+.T-Side {
+  display: flex;
+  border-left: 9px solid white;
+  width: 0;
+  height: 259px;
+  margin-left: 178px;
+  position: absolute;
+  margin-top: 220px;
+}
+
+.background-circle {
+  border-width: 0;
+  border-color: #c8afb2;
+  border-style: solid;
+  border-radius: 50%;
+  /* background-color: #c8afb2;
+  width: 60vh;
+  height: 60vh; */
+  border-width: 30vh;
+  width:0;
+}
+
+.background-circle-wrapper {
+  position: absolute;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* .tedious_bg {
+    animation: bg-enter 4s ease-in-out 1s;
+    animation-fill-mode: backwards;
+  } */
+  .background-circle {
+    animation: background-circle-enter 4s ease-in-out 1s;
+    animation-fill-mode: backwards;
+  }
+  .T-Top {
+    animation: T-top-enter 4s ease-in-out 2s;
+    animation-fill-mode: backwards;
+  }
+  .T-Side {
+    animation: T-side-enter 4s ease-in-out 2s;
+    animation-fill-mode: backwards;
+  }
+
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +183,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
