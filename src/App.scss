@@ -62,10 +62,10 @@ body {
 
 @keyframes Horizontal-line-enter-3 {
   from {
-    right: -100%;
+    margin-left: 100vh;
   }
   to {
-    right: $hori-line-3-right;
+    margin-left: $hori-line-3-margin-left;
   }
 }
 
@@ -159,7 +159,7 @@ body {
   margin-top: 6vh;
   width: 73vh;
   border-width: 1vh;
-  right: $hori-line-3-right;
+  margin-left: $hori-line-3-margin-left;
 }
 
 
