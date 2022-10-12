@@ -138,6 +138,33 @@ body {
   }
 }
 
+@keyframes social-media-enter {
+  from {
+    margin-right: -100vh;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes loading-fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes found-me-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .tedious_bg {
   background-color: #6f3f59;
   background-image: url('./TediousBgImg.jpg');
@@ -161,6 +188,7 @@ body {
   border-radius: 50%;
   border-width: 34vh;
   width: 0;
+  z-index: 1;
   /* position: relative; */
 }
 
@@ -263,6 +291,80 @@ body {
   height: 11vh;
 }
 
+// .social_media_icons {
+//   font-family: 'Material Icons';
+// }
+
+// .social_media_icons.facebook {
+//   content: 'facebook';
+// }
+
+
+.socialMediaIconsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 1;
+  margin: 7px 9px 0 0;
+}
+
+.loading {
+  position: absolute;
+  z-index: 0;
+  color: white;
+}
+
+
+// .socialMediaIconsWrapper .socialMediaIcons:hover {
+//   color:#d6683f;
+// }
+
+.socialMediaIconsWrapper .socialMediaIcons:hover {
+  // color: #ffffff;
+  /* transition: auto; */
+  /* font-size: 3.5em !important; */
+  transform: scale(1.24);
+  transition: transform 1s;
+  /* font-size: 2.5em !important; */
+}
+
+.socialMediaIcons {
+  font-size: 3em !important;
+  // margin: 9px 9px 0 0px;
+  color: white;
+  transition: transform 0.3s ease-out !important;
+}
+
+
+.found_me {
+  position: absolute;
+  z-index: 0;
+  color: white;
+  top: 40vh;
+}
+
+// .socialMediaIconsWrapper:hover {
+//   opacity: 0.5;
+// }
+
+// .facebookIcon:hover ~ svg {
+//     background-color: white;
+//   border-radius: 100%;
+//   fill: white;
+//   stroke: black;
+// }
+
+// a.fb-anchor:hover {
+//   opacity: 0;
+// }
+
+// .socialMediaIcons.facebookIcon:hover,
+// .socialMediaIcons.instagramIcon:hover {
+//   opacity: 0;
+// }
+
+
 // .T-Top, .T-Side, .HorizontalLines, .LettersStyle {
 //   box-shadow: 6px 2px 7px 0px green;
 // }
@@ -312,6 +414,16 @@ body {
     animation: live-music-soundcloud-enter 2s ease-out 9s;
     animation-fill-mode: backwards;
   }
+  .socialMediaIcons {
+    animation: social-media-enter 7s ease-out 4s;
+    animation-fill-mode: backwards;
+  }
+  // .socialMediaIcons.instagramIcon {
+  //   animation-delay: 2s;
+  // }
+  // .socialMediaIcons.facebookIcon {
+  //   animation-delay: 3s;
+  // }
   .LettersStyle.E {
     animation-delay: 1s;
   }
@@ -330,5 +442,12 @@ body {
   .LettersStyle.S {
     animation-delay: 3s;
   }
-
+  .loading {
+    animation: loading-fadeout 3s ease-out;
+    animation-fill-mode: forwards;
+  }
+  .found_me {
+    animation: found-me-fadein 0s ease-out 8s;
+    animation-fill-mode: backwards;
+  }
 }
