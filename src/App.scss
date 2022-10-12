@@ -263,6 +263,10 @@ body {
   height: 11vh;
 }
 
+// .T-Top, .T-Side, .HorizontalLines, .LettersStyle {
+//   box-shadow: 6px 2px 7px 0px green;
+// }
+
 @media (prefers-reduced-motion: no-preference) {
   .background-circle {
     animation: background-circle-enter 7s ease-in-out;
@@ -305,7 +309,7 @@ body {
     animation-fill-mode: backwards;
   }
   .live_music_soundcloud {
-    animation: live-music-soundcloud-enter 2s ease-out 8s;
+    animation: live-music-soundcloud-enter 2s ease-out 9s;
     animation-fill-mode: backwards;
   }
   .LettersStyle.E {

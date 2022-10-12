@@ -7,8 +7,12 @@ export default function Tedious() {
   return (
     <>
     <div className="divWrapper">
-      <div className="tedious_bg">
-          {/* <Tilt className="background-circle-wrapper" options={{ max : 15, reset: true }}> */}
+      <div className="tedious_bg" style={{display: 'flex', justifyContent: 'center'}}>
+          {/* <Tilt className="background-circle-wrapper" style={{maxWidth: 'fit-content'}} options={{ max : 10, reset: true }}> */}
+         <div>
+            <span>facebook</span>
+            <span>instagram</span>
+         </div>
           <span className="background-circle-wrapper">
             <span className="background-circle">
               <span className="T-Top" />
