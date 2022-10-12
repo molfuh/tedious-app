@@ -15,7 +15,7 @@ body {
 
 @keyframes background-circle-enter {
   from {
-    margin-bottom: -1650px;
+    margin-bottom: -200vh;
   }
   to {
     margin-bottom: 0px;
@@ -34,31 +34,43 @@ body {
 @keyframes T-top-enter {
   from {
     width: 0px;
-    // margin-left: -100%;
+    margin-left: -100%;
   }
   to {
     width: $T-top-width;
-    // margin-left: $T-top-margin-left;
+    margin-left: $T-top-margin-left;
   }
 }
 
-@keyframes Vertical-lines-enter {
+@keyframes Horizontal-line-enter-1 {
   from {
     margin-left: -100%;
   }
   to {
-    margin-left: $T-top-margin-left;
+    margin-left: $hori-line-1-margin-left;
+  }
+}
+
+@keyframes Horizontal-line-enter-2 {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: $hori-line-2-margin-left;
   }
 }
 
 @keyframes T-side-enter {
   from {
-    height: 0;
-    margin-top: -100%;
+    // height: 0;
+    // margin-top: -100%;
+    top: -100vh;
   }
   to {
-    height: $T-side-height;
-    margin-top: $T-side-margin-top;
+    top: $T-side-top;
+    // height: $T-side-height;
+    // margin-top: $T-side-margin-top;
+    // margin-top: 0;
   }
 }
 
@@ -84,7 +96,7 @@ body {
   border-color: #c8afb2;
   border-style: solid;
   border-radius: 50%;
-  border-width: 30vh;
+  border-width: 34vh;
   width: 0;
   /* position: relative; */
 }
@@ -99,54 +111,61 @@ body {
 }
 
 .T-Top {
-  display: flex;
-  border-bottom: 18px solid white;
+  // display: flex;
+  border-bottom: 2.6vh solid white;
   position: absolute;
-  width: $T-top-width;
   /* top: -87px;
   left: -327px; */
   margin-left: $T-top-margin-left;
-    margin-top: -65px;
+  margin-top: -12vh;
+  width: $T-top-width;
+    // width: 69vh;
+    // margin-left: -35vh;
+    // margin-top: -12vh;
 }
 
-.VerticalLines:nth-child(1) {
-  margin-top: -105px;
-  width: 500px;
-  border-width: 8px;
-  margin-left: -174px;
+.HorizontalLines:nth-child(1) {
+  margin-top: -17vh;
+  width: 53vh;
+  border-width: 1vh;
+  margin-left: $hori-line-1-margin-left;
 }
 
+.HorizontalLines:nth-child(2) {
+  margin-top: -22vh;
+  width: 43vh;
+  border-width: 1vh;
+  margin-left: $hori-line-2-margin-left;
+}
 
 
 .T-Side {
-  display: flex;
-  border-left: 20px solid white;
-  width: 0;
+  border-left: 3vh solid white;
   height: $T-side-height;
-  margin-left: -231px;
   position: absolute;
-  margin-top: $T-side-margin-top;
+  top: $T-side-top;
+  margin-left: -28vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* .tedious_bg {
-    animation: bg-enter 4s ease-in-out 1s;
-    animation-fill-mode: backwards;
-  } */
   .background-circle {
-    animation: background-circle-enter 4s ease-in-out 1s;
+    animation: background-circle-enter 6s ease-in-out;
     animation-fill-mode: backwards;
   }
   .T-Top {
-    animation: T-top-enter 4s ease-out 2s;
+    animation: T-top-enter 5s ease-out 1s;
     animation-fill-mode: backwards;
   }
-  .VerticalLines {
-    animation: Vertical-lines-enter 4s ease-out 2s;
+  .HorizontalLines:nth-child(1) {
+    animation: Horizontal-line-enter-1 5s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
+  .HorizontalLines:nth-child(2) {
+    animation: Horizontal-line-enter-2 5s ease-out 1s;
     animation-fill-mode: backwards;
   }
   .T-Side {
-    animation: T-side-enter 4s ease-out 2s;
+    animation: T-side-enter 5s ease-out 1s;
     animation-fill-mode: backwards;
   }
 

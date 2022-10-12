@@ -12,8 +12,8 @@ export default function Tedious() {
               <span className="T-Top" />
               <span className="T-Side" />
               <span>
-                <span className="VerticalLines T-Top"></span>
-                <span className="VerticalLines T-Top"></span>
+                <span className="HorizontalLines T-Top"></span>
+                <span className="HorizontalLines T-Top"></span>
               </span>
             </span>
           </span>
