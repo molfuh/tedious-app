@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react'
-import TediousBgImg from './TediousBgImg.jpg';
+// import TediousBgImg from './TediousBgImg.jpg';
 import Tilt from 'react-tilt';
 
 export default function Tedious() {
@@ -14,6 +14,7 @@ export default function Tedious() {
               <span className="T-Top" />
               <span className="T-Side" />
               <span>
+                <span className="HorizontalLines T-Top"></span>
                 <span className="HorizontalLines T-Top"></span>
                 <span className="HorizontalLines T-Top"></span>
                 <span className="HorizontalLines T-Top"></span>

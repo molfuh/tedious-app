@@ -45,39 +45,56 @@ body {
 @keyframes Horizontal-line-enter-1 {
   from {
     margin-left: -100%;
+    width: 0;
   }
   to {
     margin-left: $hori-line-1-margin-left;
+    width: $hori-line-1-width;
   }
 }
 
 @keyframes Horizontal-line-enter-2 {
   from {
     margin-left: -100%;
+    width: 0;
   }
   to {
     margin-left: $hori-line-2-margin-left;
+    width: $hori-line-2-width;
   }
 }
 
 @keyframes Horizontal-line-enter-3 {
   from {
     margin-left: 100vh;
+    width: 0;
   }
   to {
     margin-left: $hori-line-3-margin-left;
+    width: $hori-line-3-width;
+  }
+}
+
+@keyframes Horizontal-line-enter-4 {
+  from {
+    margin-left: 100vh;
+    width: 0;
+  }
+  to {
+    margin-left: $hori-line-4-margin-left;
+    width: $hori-line-4-width;
   }
 }
 
 @keyframes T-side-enter {
   from {
-    // height: 0;
+    height: 0;
     // margin-top: -100%;
     top: -100vh;
   }
   to {
     top: $T-side-top;
-    // height: $T-side-height;
+    height: $T-side-height;
     // margin-top: $T-side-margin-top;
     // margin-top: 0;
   }
@@ -143,23 +160,30 @@ body {
 
 .HorizontalLines:nth-child(1) {
   margin-top: -17vh;
-  width: 53vh;
+  width: $hori-line-1-width;
   border-width: 1vh;
   margin-left: $hori-line-1-margin-left;
 }
 
 .HorizontalLines:nth-child(2) {
   margin-top: -22vh;
-  width: 43vh;
+  width: $hori-line-2-width;
   border-width: 1vh;
   margin-left: $hori-line-2-margin-left;
 }
 
 .HorizontalLines:nth-child(3) {
   margin-top: 6vh;
-  width: 73vh;
+  width: $hori-line-3-width;
   border-width: 1vh;
   margin-left: $hori-line-3-margin-left;
+}
+
+.HorizontalLines:nth-child(4) {
+  margin-top: 11vh;
+  width: $hori-line-4-width;
+  border-width: 1vh;
+  margin-left: $hori-line-4-margin-left;
 }
 
 
@@ -204,6 +228,10 @@ body {
   }
   .HorizontalLines:nth-child(3) {
     animation: Horizontal-line-enter-3 6s ease-out 2s;
+    animation-fill-mode: backwards;
+  }
+  .HorizontalLines:nth-child(4) {
+    animation: Horizontal-line-enter-4 6s ease-out 2s;
     animation-fill-mode: backwards;
   }
   .T-Side {
