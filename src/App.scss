@@ -74,6 +74,14 @@ body {
   }
 }
 
+@keyframes letters-enter {
+  from {
+    margin-left: 100vw;
+  }
+  to {
+    margin-left: 0;
+  }
+}
 
 .tedious_bg {
   background-color: #6f3f59;
@@ -147,26 +155,61 @@ body {
   margin-left: -28vh;
 }
 
+.LettersStyleWrapper {
+  position: absolute;
+  display: flex;
+  margin-left: -23vh;
+}
+
+.LettersStyle {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 5.5em;
+  margin-top: -10vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .background-circle {
-    animation: background-circle-enter 6s ease-in-out;
+    animation: background-circle-enter 7s ease-in-out;
     animation-fill-mode: backwards;
   }
   .T-Top {
-    animation: T-top-enter 5s ease-out 1s;
+    animation: T-top-enter 6s ease-out 2s;
     animation-fill-mode: backwards;
   }
   .HorizontalLines:nth-child(1) {
-    animation: Horizontal-line-enter-1 5s ease-out 1s;
+    animation: Horizontal-line-enter-1 6s ease-out 2s;
     animation-fill-mode: backwards;
   }
   .HorizontalLines:nth-child(2) {
-    animation: Horizontal-line-enter-2 5s ease-out 1s;
+    animation: Horizontal-line-enter-2 6s ease-out 2s;
     animation-fill-mode: backwards;
   }
   .T-Side {
-    animation: T-side-enter 5s ease-out 1s;
+    animation: T-side-enter 6s ease-out 2s;
     animation-fill-mode: backwards;
+  }
+  .LettersStyle {
+    animation: letters-enter 5s ease-out;
+    animation-fill-mode: backwards;
+  }
+  .LettersStyle.E {
+    animation-delay: 1s;
+  }
+  .LettersStyle.D {
+    animation-delay: 2s;
+  }
+  .LettersStyle.I {
+    animation-delay: 3s;
+  }
+  .LettersStyle.O {
+    animation-delay: 3s;
+  }
+  .LettersStyle.U {
+    animation-delay: 3s;
+  }
+  .LettersStyle.S {
+    animation-delay: 3s;
   }
 
 }

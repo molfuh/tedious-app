@@ -5,6 +5,7 @@ import './AppMediaQuery.scss';
 import './styleVariables.scss';
 import Tedious from './Tedious';
 
+
 function App() {
   return (
     <>
