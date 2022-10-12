@@ -16,6 +16,7 @@ export default function Tedious() {
               <span>
                 <span className="HorizontalLines T-Top"></span>
                 <span className="HorizontalLines T-Top"></span>
+                <span className="HorizontalLines T-Top"></span>
               </span>
               <span className="LettersStyleWrapper">
                 <span className="E LettersStyle">E</span>
