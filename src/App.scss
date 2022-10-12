@@ -131,10 +131,12 @@ body {
 
 @keyframes live-music-soundcloud-enter {
   from {
-    opacity: 0;
+    // opacity: 0;
+    margin-bottom: -100vh;
   }
   to {
-    opacity: 1;
+    // opacity: 1;
+    margin-bottom: 0;
   }
 }
 
@@ -411,7 +413,7 @@ body {
     animation-fill-mode: backwards;
   }
   .live_music_soundcloud {
-    animation: live-music-soundcloud-enter 2s ease-out 9s;
+    animation: live-music-soundcloud-enter 5s ease-in-out 8s;
     animation-fill-mode: backwards;
   }
   .socialMediaIcons {
