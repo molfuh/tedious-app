@@ -86,6 +86,17 @@ body {
   }
 }
 
+@keyframes Horizontal-line-enter-5 {
+  from {
+    margin-left: 100vh;
+    width: 0;
+  }
+  to {
+    margin-left: $hori-line-5-margin-left;
+    width: $hori-line-5-width;
+  }
+}
+
 @keyframes T-side-enter {
   from {
     height: 0;
@@ -106,6 +117,24 @@ body {
   }
   to {
     margin-left: 0;
+  }
+}
+
+@keyframes live-ted-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes live-music-soundcloud-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -137,12 +166,13 @@ body {
 
 .background-circle-wrapper {
   position: absolute;
-    height: inherit;
-    width: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  height: inherit;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5vh;
+  }
 
 .T-Top {
   // display: flex;
@@ -186,6 +216,12 @@ body {
   margin-left: $hori-line-4-margin-left;
 }
 
+.HorizontalLines:nth-child(5) {
+  margin-top: 16vh;
+  width: $hori-line-5-width;
+  border-width: 1vh;
+  margin-left: $hori-line-5-margin-left;
+}
 
 .T-Side {
   border-left: 3vh solid white;
@@ -207,6 +243,24 @@ body {
   font-size: 6.2em;
   margin-top: -10vh;
   font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.live_ted_text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 23vh;
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  margin-left: -12vh;
+}
+
+.live_music_soundcloud {
+  position: absolute;
+  bottom: 0;
+  height: 11vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -231,7 +285,11 @@ body {
     animation-fill-mode: backwards;
   }
   .HorizontalLines:nth-child(4) {
-    animation: Horizontal-line-enter-4 6s ease-out 2s;
+    animation: Horizontal-line-enter-4 5s ease-out 3s;
+    animation-fill-mode: backwards;
+  }
+  .HorizontalLines:nth-child(5) {
+    animation: Horizontal-line-enter-5 4s ease-out 4s;
     animation-fill-mode: backwards;
   }
   .T-Side {
@@ -240,6 +298,14 @@ body {
   }
   .LettersStyle {
     animation: letters-enter 5s ease-out;
+    animation-fill-mode: backwards;
+  }
+  .live_ted_text {
+    animation: live-ted-enter 2s ease-out 8s;
+    animation-fill-mode: backwards;
+  }
+  .live_music_soundcloud {
+    animation: live-music-soundcloud-enter 2s ease-out 8s;
     animation-fill-mode: backwards;
   }
   .LettersStyle.E {
