@@ -34,8 +34,12 @@ export default function Tedious() {
               loading: good vibes....
             </span> */}
             <span className="background-circle">
-              <span className="T-Top" />
-              <span className="T-Side" />
+              <span>
+                <span className="T-Top" />
+              </span>
+              <span>
+                <span className="T-Side" />
+              </span>
               <span>
                 <span className="HorizontalLines T-Top"></span>
                 <span className="HorizontalLines T-Top"></span>
@@ -43,14 +47,16 @@ export default function Tedious() {
                 <span className="HorizontalLines T-Top"></span>
                 <span className="HorizontalLines T-Top"></span>
               </span>
-              <span className="LettersStyleWrapper">
-                <span className="E LettersStyle">E</span>
-                <span className="D LettersStyle">D</span>
-                <span className="I LettersStyle">I</span>
-                <span className="O LettersStyle">O</span>
-                <span className="U LettersStyle">U</span>
-                <span className="S LettersStyle">S</span>
-              </span>
+              <div>
+                <span className="LettersStyleWrapper">
+                  <span className="E LettersStyle">E</span>
+                  <span className="D LettersStyle">D</span>
+                  <span className="I LettersStyle">I</span>
+                  <span className="O LettersStyle">O</span>
+                  <span className="U LettersStyle">U</span>
+                  <span className="S LettersStyle">S</span>
+                </span>
+              </div>
               <span className="live_ted_text">
                 live tediously
               </span>

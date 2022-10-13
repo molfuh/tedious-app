@@ -1,16 +1,80 @@
 @media screen and (min-width: 660px) and (max-width: 1200px) {
+  // $T-top-margin-left: -42% !important;
+  // $T-top-width: 85%;
   .tedious_bg {
     // background-image: unset;
     // background-color: yellow;
   }
+  .background-circle {
+    border-width: 20em;
+  }
+  .live_ted_text {
+    font-size: 2.5vh;
+  }
+  .T-Side, .T-Top {
+    border-width: 2vh;
+    width: 85%;
+    margin-left: -42%;
+  }
+  .T-Top.HorizontalLines {
+    border-width: 0.75vh;
+  }
+  // .HorizontalLines:nth-child(3) {
+  //   width: 86%;
+  //   margin-left: -44%;
+  // }
+  .HorizontalLines:nth-child(4) {
+    margin-left: -41%;
+    width: 63%;
+  }
+  .HorizontalLines:nth-child(5) {
+    margin-left: -35%;
+    width: 47%;
+  }
+  .live_ted_text {
+    margin-top: 28%;
+  }
+  .LettersStyleWrapper {
+    margin-left: -27%;
+}
+  .LettersStyle {
+    font-size: 7.5em;
+  }
+  .T-Side {
+    margin-left: -32%;
+}
+  
 }
 
 @media screen and (max-width: 660px) {
   .tedious_bg {
     // background-image: unset;
     // background-color: red;
-
   }
+  .background-circle {
+    border-width: 20em;
+  }
+  .live_ted_text {
+    font-size: 2.5vh;
+  }
+  .T-Side, .T-Top {
+    border-width: 1.5vh;
+  }   
+  .T-Top.HorizontalLines {
+    border-width: 0.5vh;
+  }
+  .live_ted_text {
+    margin-top: 28%;
+  }
+  .LettersStyleWrapper {
+    margin-left: -30%;
+}
+  .LettersStyle {
+    font-size: 3.5em;
+  }
+  .T-Side {
+    margin-left: -35%;
+}
   .background-circle {
     // border-width: 215px;
   }
