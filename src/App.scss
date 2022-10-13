@@ -1,7 +1,16 @@
 @import './styleVariables.scss';
 @import './AppMediaQuery.scss';
+@import './index.scss';
+
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('./fonts/Agrandir-Regular.otf')
+  format('opentype');
+}
 
 body {
+  font-family: "Agrandir", sans-serif, "Montserrat", sans-serif;
   overflow: hidden;
 }
 
@@ -271,12 +280,12 @@ body {
 }
 
 .LettersStyle {
-  font-family: "Montserrat", sans-serif;
+  // font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 12vh;
-  margin-top: -10vh;
+  margin-top: -9vh;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 11px;
 }
 
 .live_ted_text {
