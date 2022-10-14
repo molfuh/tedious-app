@@ -285,7 +285,7 @@ body {
   font-size: 12vh;
   margin-top: -9vh;
   font-weight: 500;
-  letter-spacing: 11px;
+  letter-spacing: 20px;
 }
 
 .live_ted_text {
@@ -299,10 +299,12 @@ body {
   // margin-left: -12vh;
 }
 
-.live_music_soundcloud {
+.out_soon {
   position: absolute;
-  bottom: 0;
-  height: 16vh;
+  bottom: 6vh;
+  color:white;
+  font-size: 2.5vh;
+  // height: 16vh;
   // height: fit-content;
 }
 
@@ -346,9 +348,12 @@ body {
 
 .socialMediaIcons {
   font-size: 8vh !important;
-  // margin: 9px 9px 0 0px;
-  color: white;
+  height: 1em;
+  width: 0.7em;
   transition: transform 0.3s ease-out !important;
+  color: white;
+  fill: white;
+  padding: 5px;
 }
 
 
@@ -425,7 +430,7 @@ body {
     animation: live-ted-enter 2s ease-out 8s;
     animation-fill-mode: backwards;
   }
-  .live_music_soundcloud {
+  .out_soon {
     animation: live-music-soundcloud-enter 5s ease-in-out 8s;
     animation-fill-mode: backwards;
   }
