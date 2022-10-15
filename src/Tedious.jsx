@@ -12,7 +12,7 @@ export default function Tedious() {
   return (
     <>
     <div className="divWrapper">
-      <div className="tedious_bg" style={{display: 'flex', justifyContent: 'center'}}>
+      <div className="tedious_bg">
             <span className="found_me">
               you found me! :D
             </span>
@@ -34,30 +34,29 @@ export default function Tedious() {
             {/* <span className="loading">
               loading: good vibes....
             </span> */}
+            {/* <span className="ted_bg_image"></span> */}
             <span className="background-circle">
-              <span>
-                <span className="T-Top" />
-              </span>
-              <span>
                 <span className="T-Side" />
-              </span>
-              <span>
-                <span className="HorizontalLines T-Top"></span>
-                <span className="HorizontalLines T-Top"></span>
-                <span className="HorizontalLines T-Top"></span>
-                <span className="HorizontalLines T-Top"></span>
-                <span className="HorizontalLines T-Top"></span>
-              </span>
-              <div>
-                <span className="LettersStyleWrapper">
-                  <span className="E LettersStyle">E</span>
-                  <span className="D LettersStyle">D</span>
-                  <span className="I LettersStyle">I</span>
-                  <span className="O LettersStyle">O</span>
-                  <span className="U LettersStyle">U</span>
-                  <span className="S LettersStyle">S</span>
+                <span className="T-Top" />
+              {/* <div style={{    marginTop: '10%' }}> */}
+                <span>
+                  <span className="HorizontalLines"></span>
+                  <span className="HorizontalLines"></span>
+                  <span className="HorizontalLines"></span>
+                  <span className="HorizontalLines"></span>
+                  <span className="HorizontalLines"></span>
                 </span>
-              </div>
+                {/* <div> */}
+                  <span className="LettersStyleWrapper">
+                    <span className="E LettersStyle">E</span>
+                    <span className="D LettersStyle">D</span>
+                    <span className="I LettersStyle">I</span>
+                    <span className="O LettersStyle">O</span>
+                    <span className="U LettersStyle">U</span>
+                    <span className="S LettersStyle">S</span>
+                  </span>
+                {/* </div> */}
+              {/* </div> */}
               <span className="live_ted_text">
                 live tediously
               </span>
