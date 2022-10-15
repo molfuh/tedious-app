@@ -221,7 +221,7 @@ body {
 
 .tedious_bg {
   background-color: #6f3f59;
-  background-image: url(http://localhost:3000/static/media/TediousBgImg.1abb5deffcab0e07399e.jpg);
+  background-image: url('./TediousBgImg.jpg');
   height: 100%;
   width: 0;
   width: 100%;
@@ -624,9 +624,11 @@ body {
   }
   .LettersStyle.U {
     animation-delay: 4s;
+    // animation-duration: 3.5s;
   }
   .LettersStyle.S {
-    animation-delay: 4.5s;
+    animation-delay: 4.75s;
+    animation-duration: 3.5s;
   }
   .loading {
     animation: loading-fadeout 3s ease-out;
