@@ -95,7 +95,7 @@ body {
 @keyframes Horizontal-line-enter-3 {
   from {
     // margin-left: 100vh;
-    left: 100vw;
+    left: -100vw;
     width: 0;
   }
   to {
@@ -108,7 +108,7 @@ body {
 @keyframes Horizontal-line-enter-4 {
   from {
     // margin-left: 100vh;
-    left: 100vw;
+    left: -100vw;
     width: 0;
   }
   to {
@@ -121,7 +121,7 @@ body {
 @keyframes Horizontal-line-enter-5 {
   from {
     // margin-left: 100vh;
-    left: 100vw;
+    left: -100vw;
     width: 0;
   }
   to {
@@ -452,6 +452,7 @@ body {
   position: relative;
   margin-right: 3%;
   top: 0;
+  left: 0;
 }
 
 .live_ted_text {
