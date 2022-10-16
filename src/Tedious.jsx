@@ -16,7 +16,6 @@ export default function Tedious() {
             <span className="found_me">
               you found me! :D
             </span>
-          {/* <Tilt className="background-circle-wrapper" style={{maxWidth: 'fit-content'}} options={{ max : 10, reset: true }}> */}
          <div className="socialMediaIconsWrapper">
           <a href="https://www.youtube.com/channel/UC7SRMEAzVHVG5gHimUlEHDg" target="_blank" rel="noreferrer">
             <YouTubeIcon className="socialMediaIcons"></YouTubeIcon>
@@ -30,6 +29,7 @@ export default function Tedious() {
             {/* <span className="social_media_icons instagram">{FacebookIcon}</span> */}
          </div>
         <Draggable>
+          {/* <Tilt className="background-circle-wrapper" style={{maxWidth: 'fit-content'}} options={{ max : 10, reset: true }}> */}
           <span className="background-circle-wrapper">
             {/* <span className="loading">
               loading: good vibes....
@@ -61,8 +61,8 @@ export default function Tedious() {
                 live tediously
               </span>
             </span>
-          </span>
           {/* </Tilt> */}
+          </span>
         </Draggable>
           {/* <iframe className="out_soon" title="tedious_song" width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/950548042&color=%23c8afb2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
           <div Style={{fontSize: '10px', color: '#c8afb2',lineBreak: 'anywhere',wordBreak: 'normal',overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', fontFamily: 'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif',fontWeight: '100'}}> */}
