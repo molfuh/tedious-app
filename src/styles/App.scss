@@ -1,8 +1,8 @@
 @import './index.scss';
-@import './StyleVariables.scss';
+@import './Animations.scss';
 @import './AppMediaQuery.scss';
 @import './Keyframes.scss';
-@import './Animations.scss';
+@import './StyleVariables.scss';
 
 .tedious_bg {
   background-color: #6f3f59;
@@ -23,23 +23,9 @@
   height: 100vh;
 }
 
-// .background-circle {
-//   border-width: 0;
-//   border-color: #c8afb2;
-//   border-style: solid;
-//   border-radius: 50%;
-//   border-width: 34vh;
-//   width: 0;
-//   z-index: 1;
-//   display: flex;
-//   justify-content: center;
-//   /* position: relative; */
-// }
-
 .background-circle {
   border-width: 100%;
   background-color: #c8afb2;
-  /* border-style: solid; */
   width: 100% !important;
   height: 100%;
   border-radius: 100%;
@@ -49,21 +35,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
 }
 
-// .background-circle-wrapper {
-//   position: absolute;
-//   height: inherit;
-//   width: inherit;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-top: -5vh;
-//   }
-
 .background-circle-wrapper {
-  /* position: absolute; */
   height: inherit;
   width: inherit;
   display: flex;
@@ -78,26 +52,9 @@
   min-height: 300px;
 }
 
-// .T-Top {
-//   // display: flex;
-//   border-bottom: 2.6vh solid white;
-//   position: absolute;
-//   /* top: -87px;
-//   left: -327px; */
-//   margin-left: $T-top-margin-left;
-//   margin-top: -12vh;
-//   width: $T-top-width;
-//     // width: 69vh;
-//     // margin-left: -35vh;
-//     // margin-top: -12vh;
-// }
-
 .T-Top {
   background-color: white;
   padding: 1.75% 1px;
-  /* position: absolute; */
-  /* margin-left: -36vh; */
-  /* margin-top: -12vh; */
   width: $T-top-width;
   margin-left: $T-top-margin-left;
   margin-right: -5%;
@@ -112,28 +69,11 @@
 .T-Side {
   background-color: white;
   padding: 1px 2%;
-  /* position: absolute; */
-  /* align-items: normal; */
-  /* margin-left: -36vh; */
-  /* margin-top: -12vh; */
   height: $T-side-height;
-  /* margin-left: -7%; */
-  /* margin-right: -7%; */
-  // align-self: end;
   position: absolute;
   bottom: 0;
   left: 8%;
-  /* margin-top: -25%; */
 }
-
-
-// .T-Side {
-//   border-left: 3vh solid white;
-//   height: $T-side-height;
-//   position: absolute;
-//   top: $T-side-top;
-//   margin-left: -28vh;
-// }
 
 .HorizontalLines {
   padding: 0.6% 1px;
@@ -142,10 +82,7 @@
 
 .HorizontalLines:nth-child(1) {
   margin-left: $hori-line-1-margin-left;
-  /* margin-top: -22vh; */
-  /* width: 53vh; */
   background-color: white;
-  /* margin-left: -20vh; */
   top: 0;
   width: $hori-line-1-width;
   margin-top: 21%;
@@ -153,10 +90,7 @@
 }
 
 .HorizontalLines:nth-child(2) {
-  /* margin-top: -17vh; */
-  /* width: 43vh; */
   background-color: white;
-  /* margin-left: -15vh; */
   right: 0;
   top: 0;
   left: 0;
@@ -166,10 +100,7 @@
 }
 
 .HorizontalLines:nth-child(3) {
-  /* margin-top: 6vh; */
-  /* width: 73vh; */
   background-color: white;
-  /* margin-left: -36vh; */
   width: $hori-line-3-width;
   left: 0;
   margin-top: 13%;
@@ -178,10 +109,7 @@
 }
 
 .HorizontalLines:nth-child(4) {
-  /* margin-top: 11vh; */
-  /* width: 58vh; */
   background-color: white;
-  /* margin-left: -35vh; */
   width: $hori-line-4-width;
   left: 0;
   margin-top: 21%;
@@ -191,49 +119,25 @@
 
 .HorizontalLines:nth-child(5) {
   margin-left: 5%;
-  /* margin-top: 16vh; */
-  /* width: 48vh; */
   background-color: white;
-  /* margin-left: -33vh; */
   width: $hori-line-5-width;
   left: 0;
-  /* bottom: 0; */
   margin-bottom: 20%;
   margin-top: 29%;
   top: 50%;
 }
 
-// .LettersStyleWrapper {
-//   position: absolute;
-//   display: flex;
-//   margin-left: -23vh;
-// }
-
 .LettersStyleWrapper {
   position: absolute;
-  /* display: flex; */
-  // margin-left: 12%;
-  /* margin-left: -23vh; */
-  // margin-top: 5%;
   margin-top: 40%;
   top: 0;
   display: flex;
   justify-content: flex-start;
 }
 
-// .LettersStyle {
-//   // font-family: "Montserrat", sans-serif;
-//   color: white;
-//   font-size: 12vh;
-//   margin-top: -9vh;
-//   font-weight: 500;
-//   letter-spacing: 20px;
-// }
-
 .LettersStyle {
   color: white;
   font-size: 10vw;
-  /* margin-top: -9vh; */
   font-weight: 500;
   letter-spacing: -3px;
   position: relative;
@@ -247,8 +151,6 @@
   color: white;
   font-weight: 500;
   position: absolute;
-  /* margin-top: 23vh; */
-  /* font-size: 3.5vh; */
   letter-spacing: 0.37vw;
   bottom: 0;
   font-size: 2.5vw;
@@ -261,18 +163,7 @@
   bottom: 5%;
   color:white;
   font-size: 2.5vh;
-  // height: 16vh;
-  // height: fit-content;
 }
-
-// .social_media_icons {
-//   font-family: 'Material Icons';
-// }
-
-// .social_media_icons.facebook {
-//   content: 'facebook';
-// }
-
 
 .socialMediaIconsWrapper {
   width: 100%;
@@ -290,18 +181,9 @@
   color: white;
 }
 
-
-// .socialMediaIconsWrapper .socialMediaIcons:hover {
-//   color:#d6683f;
-// }
-
 .socialMediaIconsWrapper .socialMediaIcons:hover {
-  // color: #ffffff;
-  /* transition: auto; */
-  /* font-size: 3.5em !important; */
   transform: scale(1.24);
   transition: transform 1s;
-  /* font-size: 2.5em !important; */
 }
 
 .socialMediaIcons {
@@ -314,7 +196,6 @@
   padding: 5px;
 }
 
-
 .found_me {
   position: absolute;
   z-index: 0;
@@ -322,34 +203,8 @@
   top: 40vh;
 }
 
-// .socialMediaIconsWrapper:hover {
-//   opacity: 0.5;
-// }
-
-// .facebookIcon:hover ~ svg {
-//     background-color: white;
-//   border-radius: 100%;
-//   fill: white;
-//   stroke: black;
-// }
-
-// a.fb-anchor:hover {
-//   opacity: 0;
-// }
-
-// .socialMediaIcons.facebookIcon:hover,
-// .socialMediaIcons.instagramIcon:hover {
-//   opacity: 0;
-// }
-
-
-// .T-Top, .T-Side, .HorizontalLines, .LettersStyle {
-//   box-shadow: 6px 2px 7px 0px green;
-// }
-
 .ted_bg_image {
   position: absolute;
-  // background-image: url(http://localhost:3000/static/media/IMG_6017.598977160124a275ca12.jpg);
   background-image: url('../images/original_icon.jpg');
   top: -155px;
   width: 931px;

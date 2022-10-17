@@ -7,9 +7,9 @@
     to {
       width: 100vw;
     }
-  }
+}
   
-  @keyframes background-circle-enter {
+@keyframes background-circle-enter {
     from {
       margin-bottom: -200vh;
     }
@@ -25,174 +25,147 @@
     100% {
       background-color: #c8afb2;
     }
-  }
+}
   
-  @keyframes T-top-enter {
+@keyframes T-top-enter {
     from {
       width: 0px;
       left: -100vh;
-      // margin-left: -100%;
     }
     to {
       width: $T-top-width;
       left: 0;
-      // margin-left: $T-top-margin-left;
     }
-  }
-  @keyframes horizontal-line-enter {
+}
+
+@keyframes horizontal-line-enter {
     from {
       width: 0px;
       left: -100vh;
-      // margin-left: -100%;
     }
     to {
       width: $T-top-width;
       left: 0;
-      // margin-left: $T-top-margin-left;
     }
-  }
+}
   
-  @keyframes Horizontal-line-enter-1 {
+@keyframes Horizontal-line-enter-1 {
     from {
-      // margin-left: -100%;
+        left: 100vw;
+        width: 0;
+    }
+    to {
+        left: 0;
+        width: $hori-line-1-width;
+    }
+}
+  
+@keyframes Horizontal-line-enter-2 {
+    from {
       left: 100vw;
       width: 0;
     }
     to {
-      // margin-left: $hori-line-1-margin-left;
-      left: 0;
-      width: $hori-line-1-width;
-    }
-  }
-  
-  @keyframes Horizontal-line-enter-2 {
-    from {
-      // margin-left: -100%;
-      left: 100vw;
-      width: 0;
-    }
-    to {
-      // margin-left: $hori-line-2-margin-left;
       left: 0;
       width: $hori-line-2-width;
     }
-  }
+}
   
-  @keyframes Horizontal-line-enter-3 {
+@keyframes Horizontal-line-enter-3 {
     from {
-      // margin-left: 100vh;
       left: -100vw;
       width: 0;
     }
     to {
-      // margin-left: $hori-line-3-margin-left;
       left: 0;
       width: $hori-line-3-width;
     }
-  }
+}
   
-  @keyframes Horizontal-line-enter-4 {
+@keyframes Horizontal-line-enter-4 {
     from {
-      // margin-left: 100vh;
       left: -100vw;
       width: 0;
     }
     to {
-      // margin-left: $hori-line-4-margin-left;
       left: 0;
       width: $hori-line-4-width;
     }
-  }
+}
   
-  @keyframes Horizontal-line-enter-5 {
+@keyframes Horizontal-line-enter-5 {
     from {
-      // margin-left: 100vh;
       left: -100vw;
       width: 0;
     }
     to {
-      // margin-left: $hori-line-5-margin-left;
       left: 0;
       width: $hori-line-5-width;
     }
-  }
+}
   
-  @keyframes T-side-enter {
+@keyframes T-side-enter {
     from {
       height: 0;
-      // margin-top: -100%;
-      // margin-top: -100vh;
-      // position: absolute;
-      // top: -100vh;
       bottom: 100vh;
-      // align-self: unset;
-      // bottom: initial;
     }
     to {
-      // position: static;
-      // top: unset;
-      // ztop: $T-side-top;
       height: $T-side-height;
-      // align-self: end;
-      // margin-top: $T-side-margin-top;
-      // margin-top: 0;
       bottom: 0;
     }
-  }
+}
   
-  @keyframes letters-enter {
+@keyframes letters-enter {
     from {
       left: 100vw;
     }
     to {
       left: 0;
     }
-  }
+}
   
-  @keyframes live-ted-enter {
+@keyframes live-ted-enter {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
     }
-  }
+}
   
-  @keyframes live-music-soundcloud-enter {
+@keyframes live-music-soundcloud-enter {
     from {
-      // opacity: 0;
       margin-bottom: -100vh;
     }
     to {
-      // opacity: 1;
       margin-bottom: 0;
     }
-  }
+}
   
-  @keyframes social-media-enter {
+@keyframes social-media-enter {
     from {
       margin-right: -100vh;
     }
     to {
       margin-right: 0;
     }
-  }
+}
   
-  @keyframes loading-fadeout {
+@keyframes loading-fadeout {
     from {
       opacity: 1;
     }
     to {
       opacity: 0;
     }
-  }
+}
   
-  @keyframes found-me-fadein {
+@keyframes found-me-fadein {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
     }
-  }
+}
   
