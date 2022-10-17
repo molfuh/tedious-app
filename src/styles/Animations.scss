@@ -1,0 +1,92 @@
+@import './StyleVariables.scss';
+
+@media (prefers-reduced-motion: no-preference) {
+    .background-circle {
+      animation: background-circle-enter 7s ease-in-out;
+      animation-fill-mode: backwards;
+    }
+    .T-Top {
+      animation: T-top-enter 6s ease-out 2s;
+      animation-fill-mode: backwards;
+    }
+    .HorizontalLines:nth-child(1) {
+      animation: Horizontal-line-enter-1 6s ease-out 1s;
+      animation-fill-mode: backwards;
+    }
+    .HorizontalLines:nth-child(2) {
+      animation: Horizontal-line-enter-2 6s ease-out 2s;
+      animation-fill-mode: backwards;
+    }
+    .HorizontalLines:nth-child(3) {
+      animation: Horizontal-line-enter-3 6s ease-out 1s;
+      animation-fill-mode: backwards;
+    }
+    .HorizontalLines:nth-child(4) {
+      animation: Horizontal-line-enter-4 6s ease-out 2s;
+      animation-fill-mode: backwards;
+    }
+    .HorizontalLines:nth-child(5) {
+      animation: Horizontal-line-enter-5 5s ease-out 3s;
+      animation-fill-mode: backwards;
+    }
+    .HorizontalLines {
+      animation: horizontal-line-enter 6s ease-out 2s;
+      animation-fill-mode: backwards;
+    }
+    .T-Side {
+      animation: T-side-enter 6s ease-out 2s;
+      animation-fill-mode: backwards;
+    }
+    .live_ted_text {
+      animation: live-ted-enter 2s ease-out 8.5s;
+      animation-fill-mode: backwards;
+    }
+    .out_soon {
+      animation: live-music-soundcloud-enter 5s ease-in-out 7.5s;
+      animation-fill-mode: backwards;
+    }
+    .socialMediaIcons {
+      animation: social-media-enter 7s ease-out 4.5s;
+      animation-fill-mode: backwards;
+    }
+    // .socialMediaIcons.instagramIcon {
+    //   animation-delay: 2s;
+    // }
+    // .socialMediaIcons.facebookIcon {
+    //   animation-delay: 3s;
+    // }
+  
+    .LettersStyle {
+      animation: letters-enter 4s ease-out;
+      animation-fill-mode: backwards;
+    }
+    .LettersStyle.E {
+      animation-delay: 2s;
+    }
+    .LettersStyle.D {
+      animation-delay: 2.5s;
+    }
+    .LettersStyle.I {
+      animation-delay: 3s;
+    }
+    .LettersStyle.O {
+      animation-delay: 3.5s;
+    }
+    .LettersStyle.U {
+      animation-delay: 4s;
+      // animation-duration: 3.5s;
+    }
+    .LettersStyle.S {
+      animation-delay: 4.75s;
+      animation-duration: 3.5s;
+    }
+    .loading {
+      animation: loading-fadeout 3s ease-out;
+      animation-fill-mode: forwards;
+    }
+    .found_me {
+      animation: found-me-fadein 0s ease-out 8s;
+      animation-fill-mode: backwards;
+    }
+  }
+  

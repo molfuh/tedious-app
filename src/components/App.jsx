@@ -1,16 +1,16 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.scss';
-import './AppMediaQuery.scss';
-import './styleVariables.scss';
+import '../styles/App.scss';
+// import './AppMediaQuery.scss';
+// import './styleVariables.scss';
 import Tedious from './Tedious';
 
 
 function App() {
   return (
-    <>
-      <Tedious />
-    </>
+      <>
+        <Tedious />
+      </>
   );
   // return (
   //   <div className="App">
