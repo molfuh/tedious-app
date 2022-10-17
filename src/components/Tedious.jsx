@@ -2,8 +2,29 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Draggable from 'react-draggable';
 import { ReactComponent as TikTokIcon } from '../images/tiktok.svg';
+import React from 'react';
 
-export default function Tedious() {
+// export default function Tedious() {
+class Tedious extends React.Component {
+  state = {
+    left: 0,
+    top: 0
+}
+componentDidMount() {
+    document.addEventListener("mousemove", this.handleCursor);
+}
+componentWillUnmount() {
+  // Make sure to remove the DOM listener when the component is unmounted.
+  document.removeEventListener("mousemove", this.handleCursor);
+}
+handleCursor = (e) => {
+    this.setState({left: e.pageX, top: e.pageY});
+    console.log(this.state.left, this.state.right);
+}
+  // const cursor = document.getElementsByClassName('cursor')[0];     
+  // cursor.setAttribute('style','top:'+e.pageY+'px; left:'+ e.pageX+'px;');
+ 
+ render() {
   return (
     <>
       <div className="appWrapper">
@@ -24,7 +45,7 @@ export default function Tedious() {
           </div>
           <Draggable>
             <span className="background-circle-wrapper">
-              <span className="background-circle">
+              <span className="background-circle" style={{left: this.state.left, top: this.state.top}} >
                 <span className="T-Side" />
                 <span className="T-Top" />
                 <div className="HorizontalLinesWrapper">
@@ -52,3 +73,6 @@ export default function Tedious() {
     </>
   )
 }
+}
+
+export default Tedious;
