@@ -1,13 +1,7 @@
-import React from 'react';
-// import { useState } from 'react'
-// import TediousBgImg from './TediousBgImg.jpg';
-// import Tilt from 'react-tilt';
-// import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Draggable from 'react-draggable';
 import { ReactComponent as TikTokIcon } from '../images/tiktok.svg';
-// import styled from 'styled-components';
 
 export default function Tedious() {
   return (
@@ -30,7 +24,6 @@ export default function Tedious() {
           </div>
           <Draggable>
             <span className="background-circle-wrapper">
-              {/* <span className="ted_bg_image"></span> */}
               <span className="background-circle">
                 <span className="T-Side" />
                 <span className="T-Top" />
