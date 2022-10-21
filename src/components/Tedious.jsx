@@ -3,13 +3,28 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import Draggable from 'react-draggable';
 import { ReactComponent as TikTokIcon } from '../images/tiktok.svg';
 import React from 'react';
+import { Modal } from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
 
-export default function Tedious() {
-// class Tedious extends React.Component {
+// export default function Tedious() {
+class Tedious extends React.Component {
 //   state = {
 //     left: 0,
 //     top: 0
 // }
+constructor(props) {
+  super(props);
+  this.state = {
+    openModalAbout: false,
+    openModalListen: false,
+    openModalContact: false
+  };
+  this.handleClickAbout = this.handleClickAbout.bind(this);
+  this.handleClickListen = this.handleClickListen.bind(this);
+  this.handleClickContact = this.handleClickContact.bind(this);
+  this.onCloseModal = this.onCloseModal.bind(this);
+}
+
 // componentDidMount() {
 //     document.addEventListener("mousemove", this.handleCursor);
 // }
@@ -23,8 +38,34 @@ export default function Tedious() {
 // }
   // const cursor = document.getElementsByClassName('cursor')[0];
   // cursor.setAttribute('style','top:'+e.pageY+'px; left:'+ e.pageX+'px;');
+  handleClickAbout = e => {
+    e.preventDefault();
+    this.setState({openModalAbout : true});
+  }
+  handleClickListen = e => {
+    e.preventDefault();
+    this.setState({openModalListen : true});
+  }
+  handleClickContact = e => {
+    e.preventDefault();
+    this.setState({openModalContact : true});
+  }
+  onCloseModal = () => {
+    // e.preventDefault();
+    // console.log('yes');
+    this.setState({
+      openModalAbout: false,
+      openModalListen: false,
+      openModalContact: false
+    });
+  }
+ render() {
+  // function openBio(open) {
+  //   console.log('yes');
+  //   // this.setState({open: true});
+  // }
 
-//  render() {
+
   return (
     <>
       <div className="appWrapper">
@@ -33,9 +74,9 @@ export default function Tedious() {
               you found me! :D
           </span>
          <div className="buttonsIconsWrapper">
-              <button className="bio buttons"><span>About</span></button>
-              <button className="listen buttons"><span>Listen</span></button>
-              <button className="contact buttons"><span>Contact</span></button>
+              <button onClick={this.handleClickAbout} className="bio buttons"><span>About</span></button>
+              <button onClick={this.handleClickListen} className="listen buttons"><span>Listen</span></button>
+              <button onClick={this.handleClickContact} className="contact buttons"><span>Contact</span></button>
             {/* <button href="#" clbuttonss="buttons">
               <span>About</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -84,9 +125,12 @@ export default function Tedious() {
           <div className="out_soon">"it's okay to be not okay" - out soon!</div>
         </div>
       </div>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalAbout} onClose={this.onCloseModal}>About</Modal>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalListen} onClose={this.onCloseModal}>Listen</Modal>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalContact} onClose={this.onCloseModal}>Contact</Modal>
     </>
   )
-// }
+}
 }
 
-// export default Tedious;
+export default Tedious;
