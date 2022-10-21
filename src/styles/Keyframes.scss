@@ -151,6 +151,15 @@
     }
 }
   
+@keyframes buttons-enter {
+    from {
+      margin-left: -100vh;
+    }
+    to {
+      margin-left: 0;
+    }
+}
+  
 @keyframes loading-fadeout {
     from {
       opacity: 1;
