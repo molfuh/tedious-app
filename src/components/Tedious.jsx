@@ -44,7 +44,6 @@ export default function Tedious() {
               </svg>
             </button> */}
             {/* </button> */}
-
           </div>
          <div className="socialMediaIconsWrapper">
             <a href="https://www.youtube.com/channel/UC7SRMEAzVHVG5gHimUlEHDg" target="_blank" rel="noreferrer">

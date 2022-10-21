@@ -8,7 +8,7 @@
       width: 100vw;
     }
 }
-  
+
 @keyframes background-circle-enter {
     from {
       margin-bottom: -200vh;
@@ -26,7 +26,7 @@
       background-color: #c8afb2;
     }
 }
-  
+
 @keyframes T-top-enter {
     from {
       width: 0px;
@@ -48,7 +48,7 @@
       left: 0;
     }
 }
-  
+
 @keyframes Horizontal-line-enter-1 {
     from {
         left: 100vw;
@@ -59,7 +59,7 @@
         width: $hori-line-1-width;
     }
 }
-  
+
 @keyframes Horizontal-line-enter-2 {
     from {
       left: 100vw;
@@ -70,7 +70,7 @@
       width: $hori-line-2-width;
     }
 }
-  
+
 @keyframes Horizontal-line-enter-3 {
     from {
       left: -100vw;
@@ -81,7 +81,7 @@
       width: $hori-line-3-width;
     }
 }
-  
+
 @keyframes Horizontal-line-enter-4 {
     from {
       left: -100vw;
@@ -92,7 +92,7 @@
       width: $hori-line-4-width;
     }
 }
-  
+
 @keyframes Horizontal-line-enter-5 {
     from {
       left: -100vw;
@@ -103,7 +103,7 @@
       width: $hori-line-5-width;
     }
 }
-  
+
 @keyframes T-side-enter {
     from {
       height: 0;
@@ -114,7 +114,7 @@
       bottom: 0;
     }
 }
-  
+
 @keyframes letters-enter {
     from {
       left: 100vw;
@@ -123,7 +123,7 @@
       left: 0;
     }
 }
-  
+
 @keyframes live-ted-enter {
     from {
       opacity: 0;
@@ -132,7 +132,7 @@
       opacity: 1;
     }
 }
-  
+
 @keyframes live-music-soundcloud-enter {
     from {
       margin-bottom: -100vh;
@@ -141,7 +141,7 @@
       margin-bottom: 0;
     }
 }
-  
+
 @keyframes social-media-enter {
     from {
       margin-right: -100vh;
@@ -150,16 +150,16 @@
       margin-right: 0;
     }
 }
-  
+
 @keyframes buttons-enter {
     from {
       margin-left: -100vh;
     }
     to {
-      margin-left: 0;
+      margin-left: 5px;
     }
 }
-  
+
 @keyframes loading-fadeout {
     from {
       opacity: 1;
@@ -168,7 +168,7 @@
       opacity: 0;
     }
 }
-  
+
 @keyframes found-me-fadein {
     from {
       opacity: 0;
@@ -177,4 +177,3 @@
       opacity: 1;
     }
 }
-  
