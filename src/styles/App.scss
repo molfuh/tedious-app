@@ -180,38 +180,124 @@
   top: 0;
 }
 
-.buttons:before {
-  content: "";
-  height: 2em;
-  width: 2em;
-  padding: 1em;
-  border-radius: 50%;
-  background-color: #c6afb2;
-  z-index: -1;
-  position: absolute;
-  transition: width 1s linear, border-radius 1s linear;
+// .buttons:before {
+//   content: "";
+//   height: 2em;
+//   width: 2em;
+//   padding: 1em;
+//   border-radius: 50%;
+//   background-color: #c6afb2;
+//   z-index: -1;
+//   position: absolute;
+//   transition: width 1s linear, border-radius 1s linear;
+// }
+
+// .buttons:hover::before {
+//   // background-color: green;
+//   width: 100%;
+//   border-radius: 30px;
+// }
+
+.buttons {
+  min-width: 100px;
+  background-color: unset;
+  padding: 5px;
+  margin-left: 15px;
+  color: white;
+  display: flex;
+  border-color: transparent;
+  /* box-shadow: unset; */
+  border-style: solid;
+  font-family: "Montserrat", sans-serif;
+  // transition: transform 0.3s ease-out !important;
+  align-items: center;
+  justify-content: space-around;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.buttons:hover {
+  /* background: white; */
+  // color: red;
+  /* color: transparent; */
+  transition: box-shadow 0.2s ease-in;
+  border-radius: 3px;
+  // box-shadow: inset 100px 0 0 0 #ffffff;
+  box-shadow: 0px 0px 7px 4px #ffffff;
+}
+
+.buttons::before {
+  font-family: "Material Icons";
+  // position: absolute;
+  // left: 0;
+  font-size: 1.5em;
+  color: white;
+  // opacity: 0;
 }
 
 .buttons:hover::before {
-  // background-color: green;
-  width: 100%;
-  border-radius: 30px;
+  /* opacity: 1; */
+  transition: opacity 1s;
+  // color: red;
+  transition: box-shadow 0.2s ease-in;
 }
 
-.buttons {
-  background-color: transparent;
-  display: flex;
-  border: 0;
-  /* width: 1em; */
-  padding: 1.5em;
-  /* height: 1em; */
-  color: white;
-  /* padding: 1em; */
-  border-radius: 50%;
-  margin-top: 10px;
-  /* margin-left: 1.5em; */
-  position: relative;
-  align-items: center;
+.bio::before {
+  content: 'info';
+}
+
+.listen::before {
+  content: 'headphones';
+}
+
+.contact::before {
+  content: 'alternate_email';
+}
+
+
+// .buttons {
+//   background-color: transparent;
+//   display: flex;
+//   // border: 0;
+//   /* width: 1em; */
+//   padding: 1em;
+//   /* height: 1em; */
+//   color: white;
+//   /* padding: 1em; */
+//   // border-radius: 50%;
+//   // margin-top: 10px;
+//   // margin-left: 1.5em;
+//   position: relative;
+//   align-items: center;
+// }
+
+// .buttons button {
+//   position: relative;
+// }
+
+// .buttonWrapperTopBottom {
+//   border-top: 1px solid white;
+//   border-bottom: 1px solid white;
+//   /* transform: translateX(10px); */
+//   height: 100%;
+//   width: 100%;
+//   /* background-color: red; */
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
+
+// .buttonWrapperTopBottom:hover {
+//   border-top: 1px solid red;
+// }
+
+// .buttonWrapperSide {
+//   border-left: 1px solid white;
+//   border-right: 1px solid white;
+// }
+
+.buttonWrapper {
+  background-color: white;
+  padding: 1.75% 1px;
 }
 
 // $color: #111;

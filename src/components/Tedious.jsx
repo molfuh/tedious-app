@@ -21,9 +21,9 @@ export default function Tedious() {
 //     this.setState({left: e.pageX, top: e.pageY});
 //     console.log(this.state.left, this.state.right);
 // }
-  // const cursor = document.getElementsByClassName('cursor')[0];     
+  // const cursor = document.getElementsByClassName('cursor')[0];
   // cursor.setAttribute('style','top:'+e.pageY+'px; left:'+ e.pageX+'px;');
- 
+
 //  render() {
   return (
     <>
@@ -33,7 +33,9 @@ export default function Tedious() {
               you found me! :D
           </span>
          <div className="buttonsIconsWrapper">
-            <button className="bio buttons">About</button>
+              <button className="bio buttons"><span>About</span></button>
+              <button className="listen buttons"><span>Listen</span></button>
+              <button className="contact buttons"><span>Contact</span></button>
             {/* <button href="#" clbuttonss="buttons">
               <span>About</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
@@ -42,9 +44,7 @@ export default function Tedious() {
               </svg>
             </button> */}
             {/* </button> */}
-            <button className="listen buttons">Listen</button>
-            <button className="contact buttons">Contact</button>
-            
+
           </div>
          <div className="socialMediaIconsWrapper">
             <a href="https://www.youtube.com/channel/UC7SRMEAzVHVG5gHimUlEHDg" target="_blank" rel="noreferrer">
