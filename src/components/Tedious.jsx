@@ -7,6 +7,7 @@ import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
 import About from './About';
 import Listen from './Listen';
+import Contact from './Contact';
 
 // export default function Tedious() {
 class Tedious extends React.Component {
@@ -156,7 +157,7 @@ constructor(props) {
       </div>
       <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalAbout} onClose={this.onCloseModal}><About/></Modal>
       <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalListen} onClose={this.onCloseModal}><Listen isPlaying={this.state.isPlaying} playMusic={this.playMusic} stopMusic={this.stopMusic} pauseMusic={this.pauseMusic}/></Modal>
-      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalContact} onClose={this.onCloseModal}>Contact</Modal>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalContact} onClose={this.onCloseModal}><Contact/></Modal>
     </>
   )
 }

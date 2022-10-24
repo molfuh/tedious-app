@@ -181,7 +181,8 @@
 }
 
 .buttons {
-  min-width: 120px;
+  // min-width: 120px;
+  width: 50px;
   color: white;
   margin-left: 5px;
   display: flex;
@@ -192,16 +193,18 @@
   justify-content: flex-start;
   border-radius: 50vw;
   padding: 0 5px 0 0;
-  transition: background-color 0.2s ease-in, margin-right 0.2s ease-in;
-  margin-right: -17%;
+  // transition: background-color 0.2s ease-in, margin-right 0.2s ease-in;
+  transition: background-color 0.2s ease-in, width 0.2s ease-in;
+  // margin-right: -17%;
 }
 
 .buttons:hover {
   background-color: white;
   cursor: pointer;
   margin-right: 0;
-  transition: background-color 0.2s ease-in, margin-right 0.2s ease-in;
+  transition: background-color 0.2s ease-in, width 0.2s ease-in;
   position: relative;
+  width: 120px;
 }
 // .bio {
 //   margin-right: -25%;
@@ -216,12 +219,13 @@
 // }
 
 .buttons span {
-  display: none;
+  opacity: 0;
 }
 
 .buttons:hover span {
   color: #e5b2aa;
-  display: flex;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
 }
 
 
@@ -405,24 +409,35 @@
 //   background-color: red;
 // }
 
-.playBtn {
-  border-color: #c8afb2;
-  width: 0;
-  background: #c8afb2;
-  border-right: 0;
-  height: 0;
-  border-top: 45px solid #c8afb2;
-  border-bottom: 45px solid #c8afb2;
-  border-left: 60px solid white;
+// .playBtn {
+//   border-color: #c8afb2;
+//   width: 0;
+//   background: #c8afb2;
+//   border-right: 0;
+//   height: 0;
+//   border-top: 45px solid #c8afb2;
+//   border-bottom: 45px solid #c8afb2;
+//   border-left: 60px solid white;
+// }
+
+// .stopBtn {
+//   border-color: #c8afb2;
+//   width: 0;
+//   background: #c8afb2;
+//   border-right: 0;
+//   height: 0;
+//   border-top: 45px solid #c8afb2;
+//   border-bottom: 45px solid #c8afb2;
+//   border-left: 60px solid white;
+// }
+
+.musicButtons {
+  background: unset;
+  border: unset;
 }
 
-.stopBtn {
-  border-color: #c8afb2;
-  width: 0;
-  background: #c8afb2;
-  border-right: 0;
-  height: 0;
-  border-top: 45px solid #c8afb2;
-  border-bottom: 45px solid #c8afb2;
-  border-left: 60px solid white;
+.musicButtons .MuiSvgIcon-root {
+  width: 100px;
+  height: 100px;
+  color: white;
 }
