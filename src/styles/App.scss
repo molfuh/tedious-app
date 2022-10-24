@@ -352,9 +352,13 @@
 //   // font-size: 90%;
 // }
 
+// .buttons span {
+//   font-size: 1vw;
+// }
+
 .react-responsive-modal-modal .modalText {
   max-width: 85%;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 // .modalTitle {
@@ -537,6 +541,8 @@
 .buttons span {
   opacity: 0;
   position: absolute;
+  font-size: 1.5em;
+  user-select: none;
 }
 
 .header {
