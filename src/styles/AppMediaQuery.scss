@@ -6,11 +6,18 @@
   .live_ted_text {
     font-size: 1em !important;
   }
+  .buttons {
+    transition: unset !important;
+     width: 100% !important;
+  }
   .buttons:hover {
-    width: 15%!important;
+    width: unset !important;
     background-color: unset !important;
-    /* position: unset !important; */
+    position: unset !important;
     margin-right: unset !important;
+    // padding: 0px !important;
+    transition: unset !important;
+    /* margin-left: unset !important; */
 }
   .buttons:hover span {
     // color: #e5b2aa;
@@ -23,6 +30,13 @@
   .musicButtons .MuiSvgIcon-root {
     width: 75px !important;
     height: 75px !important;
+  }
+  .react-responsive-modal-modal {
+    min-width: 85vw !important;
+    min-height: 85vw !important;
+  }
+  .buttons:hover span {
+    position: absolute !important;
   }
   // .buttons {
   //   margin-right: -17% !important;

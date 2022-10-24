@@ -204,7 +204,8 @@
   margin-right: 0;
   transition: background-color 0.2s ease-in, width 0.2s ease-in;
   position: relative;
-  width: 37%;
+  // width: 37%;
+  width: fit-content;
 }
 // .bio {
 //   margin-right: -25%;
@@ -364,7 +365,7 @@
   color: white;
   width: 50vw;
   border-radius: 50%;
-  margin-top: -5% !important;
+  margin-top: -1vw !important;
   height: 50vw;
   max-width: 615px !important;
   max-height: 615px !important;
@@ -459,4 +460,94 @@
 
 .listen {
   z-index: 1;
+}
+
+
+// NEW:
+
+.buttonsIconsWrapper {
+  display: flex;
+  position: relative;
+  /* left: unset; */
+  z-index: 0;
+  margin: unset;
+  /* width: unset; */
+  top: 0;
+}
+
+.socialMediaIconsWrapper {
+  /* right: 0; */
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  margin-left: -20%;
+  margin: unset;
+  top: 0;
+}
+
+// .buttons {
+//   width: fit-content;
+//   color: white;
+//   /* position: absolute; */
+//   margin-left: 5px;
+//   display: flex;
+//   border-color: transparent;
+//   background-color: transparent;
+//   font-family: "Montserrat", sans-serif;
+//   align-items: center;
+//   justify-content: flex-start;
+//   border-radius: 50vw;
+//   padding: 0 5px 0 0;
+//   transition: background-color 0.2s ease-in, width 0.2s ease-in;
+// }
+
+.buttons {
+  width: 60px;
+  position: relative;
+  color: white;
+  /* position: absolute; */
+  margin-left: 5px;
+  display: flex;
+  border-color: transparent;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 50vw;
+  padding: 0 5px 0 0;
+  transition: all 0.2s ease-in;
+}
+
+.buttons:hover {
+  background-color: white;
+  cursor: pointer;
+  /* margin-right: 0; */
+  transition: all 0.2s ease-in;
+  position: relative;
+  width: -moz-fit-content;
+  width: 150px;
+}
+
+.buttons span {
+  opacity: 0;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: fit-content;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.buttons:hover span {
+  color: #e5b2aa;
+  opacity: 1;
+  position: relative;
+  transition: opacity 0.2s ease-in;
 }

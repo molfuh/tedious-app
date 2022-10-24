@@ -103,6 +103,7 @@ constructor(props) {
           <span className="found_me">
               you found me! :D
           </span>
+          <div className="header">
          <div className="buttonsIconsWrapper">
               <button onClick={this.handleClickAbout} className="bio buttons"><span>About</span></button>
               <button onClick={this.handleClickListen} className="listen buttons"><span>Listen</span></button>
@@ -126,6 +127,7 @@ constructor(props) {
             <a href="https://www.instagram.com/itstediousmusic/" target="_blank" rel="noreferrer">
               <InstagramIcon className="socialMediaIcons" />
             </a>
+          </div>
           </div>
           <Draggable>
             <span className="background-circle-wrapper">
