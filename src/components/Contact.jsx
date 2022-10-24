@@ -5,7 +5,7 @@ import '../styles/App.scss';
 export default function Contact () {
     return (
       <>
-        <h1 className="modalText">CONTACT</h1>
+        <h1 className="modalTitle">CONTACT</h1>
         <div className="modalText">
           For questions and queries about music or shows:
           <div>bookings@itstedious.com</div>

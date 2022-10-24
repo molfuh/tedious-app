@@ -6,6 +6,24 @@
   .live_ted_text {
     font-size: 1em !important;
   }
+  .buttons:hover {
+    width: 15%!important;
+    background-color: unset !important;
+    /* position: unset !important; */
+    margin-right: unset !important;
+}
+  .buttons:hover span {
+    // color: #e5b2aa;
+    opacity: 0 !important;
+    // transition: opacity 0.2s ease-in;
+  }
+  .modalTitle {
+    font-size: 1.75em;
+  }
+  .musicButtons .MuiSvgIcon-root {
+    width: 75px !important;
+    height: 75px !important;
+  }
   // .buttons {
   //   margin-right: -17% !important;
   // }

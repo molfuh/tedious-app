@@ -21,7 +21,7 @@ export default function Listen ({isPlaying, playMusic, stopMusic, pauseMusic}) {
 
     return (
       <>
-      <h1 className="modalText">LISTEN</h1>
+      <h1 className="modalTitle">LISTEN</h1>
       <div className="modalText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</div>
       {isPlaying ? 
     //   <button className="play_btn_wrapper">

@@ -176,13 +176,13 @@
   position: absolute;
   left: 0;
   z-index: 0;
-  margin: 17px 9px 0 0;
+  margin: 15px 0px 0px 5px;
   top: 0;
 }
 
 .buttons {
   // min-width: 120px;
-  width: 50px;
+  width: 20%;
   color: white;
   margin-left: 5px;
   display: flex;
@@ -204,7 +204,7 @@
   margin-right: 0;
   transition: background-color 0.2s ease-in, width 0.2s ease-in;
   position: relative;
-  width: 120px;
+  width: 37%;
 }
 // .bio {
 //   margin-right: -25%;
@@ -348,7 +348,16 @@
 
 .react-responsive-modal-modal .modalText {
   max-width: 90%;
+  font-size: 90%;
 }
+
+// .modalTitle {
+//   font-size: 100%;
+// }
+
+// .react-responsive-modal-modal .modalText div {
+//   font-size: 90%;
+// }
 
 .react-responsive-modal-modal {
   background: #c8afb2 !important;
@@ -440,4 +449,12 @@
   width: 100px;
   height: 100px;
   color: white;
+}
+
+.contact {
+  z-index: 2;
+}
+
+.listen {
+  z-index: 1;
 }
