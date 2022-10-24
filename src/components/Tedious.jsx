@@ -5,6 +5,8 @@ import { ReactComponent as TikTokIcon } from '../images/tiktok.svg';
 import React from 'react';
 import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
+import About from './About';
+import Listen from './Listen';
 
 // export default function Tedious() {
 class Tedious extends React.Component {
@@ -17,12 +19,16 @@ constructor(props) {
   this.state = {
     openModalAbout: false,
     openModalListen: false,
-    openModalContact: false
+    openModalContact: false,
+    isPlaying: false
   };
+  this.audio = new Audio("/Lullaby.mp3");
   this.handleClickAbout = this.handleClickAbout.bind(this);
   this.handleClickListen = this.handleClickListen.bind(this);
   this.handleClickContact = this.handleClickContact.bind(this);
   this.onCloseModal = this.onCloseModal.bind(this);
+  this.playMusic = this.playMusic.bind(this);
+  this.stopMusic = this.stopMusic.bind(this);
 }
 
 // componentDidMount() {
@@ -38,6 +44,11 @@ constructor(props) {
 // }
   // const cursor = document.getElementsByClassName('cursor')[0];
   // cursor.setAttribute('style','top:'+e.pageY+'px; left:'+ e.pageX+'px;');
+  // componentDidMount = () => {
+    // var audio = new Audio("/Lullaby.mp3");
+    // audio.src = "/Lullaby.mp3"
+//  }
+  
   handleClickAbout = e => {
     e.preventDefault();
     this.setState({openModalAbout : true});
@@ -49,6 +60,19 @@ constructor(props) {
   handleClickContact = e => {
     e.preventDefault();
     this.setState({openModalContact : true});
+  }
+  playMusic = () => {
+    // e.preventDefault();
+    // let audio = new Audio("/Lullaby.mp3");
+    this.audio.play();
+    this.setState({isPlaying : true});
+  }
+  stopMusic = () => {
+    // e.preventDefault();
+    // let audio = new Audio("/Lullaby.mp3");
+    this.audio.pause();
+    this.audio.currentTime = 0;
+    this.setState({isPlaying : false});
   }
   onCloseModal = () => {
     // e.preventDefault();
@@ -125,8 +149,8 @@ constructor(props) {
           <div className="out_soon">"it's okay to be not okay" - out soon!</div>
         </div>
       </div>
-      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalAbout} onClose={this.onCloseModal}>About</Modal>
-      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalListen} onClose={this.onCloseModal}>Listen</Modal>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalAbout} onClose={this.onCloseModal}><About/></Modal>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalListen} onClose={this.onCloseModal}><Listen isPlaying={this.state.isPlaying} playMusic={this.playMusic} stopMusic={this.stopMusic}/></Modal>
       <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalContact} onClose={this.onCloseModal}>Contact</Modal>
     </>
   )

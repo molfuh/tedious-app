@@ -193,6 +193,7 @@
   border-radius: 50vw;
   padding: 0 5px 0 0;
   transition: background-color 0.2s ease-in, margin-right 0.2s ease-in;
+  margin-right: -17%;
 }
 
 .buttons:hover {
@@ -200,19 +201,19 @@
   cursor: pointer;
   margin-right: 0;
   transition: background-color 0.2s ease-in, margin-right 0.2s ease-in;
+  position: relative;
+}
+// .bio {
+//   margin-right: -25%;
+// }
 
-}
-.bio {
-  margin-right: -6vh;
-}
+// .listen {
+//   margin-right: -25%;
+// }
 
-.listen {
-  margin-right: -6vh;
-}
-
-.contact {
-  margin-right: -6vh;
-}
+// .contact {
+//   margin-right: -25%;
+// }
 
 .buttons span {
   display: none;
@@ -334,4 +335,90 @@
   z-index: 0;
   color: white;
   top: 40vh;
+}
+
+// .react-responsive-modal-modal {
+//   background: #c8afb2 !important;
+//   color: white;
+// }
+
+.react-responsive-modal-modal {
+  background: #c8afb2 !important;
+  color: white;
+  width: 50vw;
+  border-radius: 50%;
+  height: 50vw;
+  max-width: 615px !important;
+  /* padding: 3% !important; */
+  min-width: 300px;
+  min-height: 300px;
+  text-align: center !important;
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  justify-content: center;
+}
+
+.react-responsive-modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-responsive-modal-overlay {
+  backdrop-filter: blur(6px);
+  // backdrop-filter: saturate(0.5);
+  // backdrop-filter: brightness(0.5);
+}
+
+// .react-responsive-modal-closeButton {
+//   position: static !important;
+// }
+
+.react-responsive-modal-closeButton {
+  /* left: 50%; */
+  /* right: 50% !important; */
+  /* top: 10px !important; */
+  /* bottom: 10px; */
+  display: flex;
+  position: static !important;
+  width: 100%;
+  height: 88%;
+  align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+  right: 0 !important;
+}
+
+.react-responsive-modal-closeButton svg {
+  fill: white;
+}
+
+// .play_btn_wrapper {
+//   height: 100%;
+//   width: 100%;
+//   background-color: red;
+// }
+
+.playBtn {
+  border-color: #c8afb2;
+  width: 0;
+  background: #c8afb2;
+  border-right: 0;
+  height: 0;
+  border-top: 45px solid #c8afb2;
+  border-bottom: 45px solid #c8afb2;
+  border-left: 60px solid white;
+}
+
+.stopBtn {
+  border-color: #c8afb2;
+  width: 0;
+  background: #c8afb2;
+  border-right: 0;
+  height: 0;
+  border-top: 45px solid #c8afb2;
+  border-bottom: 45px solid #c8afb2;
+  border-left: 60px solid white;
 }
