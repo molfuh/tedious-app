@@ -50,7 +50,7 @@ constructor(props) {
     // var audio = new Audio("/Lullaby.mp3");
     // audio.src = "/Lullaby.mp3"
 //  }
-  
+
   handleClickAbout = e => {
     e.preventDefault();
     this.setState({openModalAbout : true});
