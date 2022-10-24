@@ -3,7 +3,7 @@ import '../styles/App.scss';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import StopCircleIcon from '@mui/icons-material/StopCircle';
 
-export default function Listen ({isPlaying, playMusic, stopMusic}) {
+export default function Listen ({isPlaying, playMusic, stopMusic, pauseMusic}) {
     // constructor(props) {
     //     super(props);
     //     this.state = {
@@ -23,7 +23,10 @@ export default function Listen ({isPlaying, playMusic, stopMusic}) {
       {isPlaying ? 
     //   <button className="play_btn_wrapper">
     // </button>      
+    <>
     <button onClick={stopMusic} className="stopBtn" aria-label="stop button"> stop </button>
+    <button onClick={pauseMusic} className="pauseBtn" aria-label="pause button"> pause </button>
+    </>
     :
     <button onClick={playMusic} className="playBtn" aria-label="play button"> play </button>
     //   <button className="play_btn_wrapper">

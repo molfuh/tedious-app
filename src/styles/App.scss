@@ -342,6 +342,10 @@
 //   color: white;
 // }
 
+.react-responsive-modal-modal .modalText {
+  max-width: 90%;
+}
+
 .react-responsive-modal-modal {
   background: #c8afb2 !important;
   color: white;
@@ -357,7 +361,7 @@
   align-items: center;
   flex-direction: column;
   // flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .react-responsive-modal-container {
@@ -384,7 +388,7 @@
   display: flex;
   position: static !important;
   width: 100%;
-  height: 88%;
+  // height: 88%;
   align-items: flex-end;
   justify-content: center;
   align-content: center;
