@@ -83,6 +83,8 @@ constructor(props) {
   onCloseModal = () => {
     // e.preventDefault();
     // console.log('yes');
+    this.audio.pause();
+    this.audio.currentTime = 0;
     this.setState({
       openModalAbout: false,
       openModalListen: false,
