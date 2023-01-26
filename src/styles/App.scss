@@ -148,11 +148,11 @@
   color: white;
   font-weight: 500;
   position: absolute;
-  letter-spacing: 0.37vw;
+  letter-spacing: 0.5vw;
   bottom: 0;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   margin-left: 1%;
-  margin-bottom: 8.5%;
+  margin-bottom: 11%;
 }
 
 .out_soon {
@@ -161,6 +161,10 @@
   color:white;
   font-size: 2.5vh;
   z-index: 0;
+}
+
+.out_soon a {
+  text-decoration: none;
 }
 
 .socialMediaIconsWrapper {

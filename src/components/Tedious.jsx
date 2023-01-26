@@ -23,7 +23,8 @@ constructor(props) {
     openModalContact: false,
     isPlaying: false
   };
-  this.audio = new Audio("/Lullaby.mp3");
+  // this.audio = new Audio("/Lullaby.mp3");
+  this.audio = new Audio("/TEDIOUS - It's Okay To Be Not Okay.mp3");
   this.handleClickAbout = this.handleClickAbout.bind(this);
   this.handleClickListen = this.handleClickListen.bind(this);
   this.handleClickContact = this.handleClickContact.bind(this);
@@ -103,12 +104,12 @@ constructor(props) {
       <div className="appWrapper">
         <div className="tedious_bg">
           <span className="found_me">
-              you found me! :D
+            <Listen isPlaying={this.state.isPlaying} playMusic={this.playMusic} stopMusic={this.stopMusic} pauseMusic={this.pauseMusic}/>
           </span>
           <div className="header">
          <div className="buttonsIconsWrapper">
               <button onClick={this.handleClickAbout} className="bio buttons"><span>About</span></button>
-              <button onClick={this.handleClickListen} className="listen buttons"><span>Listen</span></button>
+              {/* <button onClick={this.handleClickListen} className="listen buttons"><span>Listen</span></button> */}
               <button onClick={this.handleClickContact} className="contact buttons"><span>Contact</span></button>
             {/* <button href="#" clbuttonss="buttons">
               <span>About</span>
@@ -120,12 +121,12 @@ constructor(props) {
             {/* </button> */}
           </div>
          <div className="socialMediaIconsWrapper">
-            <a href="https://www.youtube.com/channel/UC7SRMEAzVHVG5gHimUlEHDg" target="_blank" rel="noreferrer">
+            {/* <a href="https://www.youtube.com/channel/UC7SRMEAzVHVG5gHimUlEHDg" target="_blank" rel="noreferrer">
               <YouTubeIcon className="socialMediaIcons" />
             </a>
             <a href="https://www.tiktok.com/@itstediousmusic?lang=en" target="_blank" rel="noreferrer">
               <TikTokIcon className="socialMediaIcons" />
-            </a>
+            </a> */}
             <a href="https://www.instagram.com/itstediousmusic/" target="_blank" rel="noreferrer">
               <InstagramIcon className="socialMediaIcons" />
             </a>
@@ -152,11 +153,11 @@ constructor(props) {
                   <span className="U LettersStyle">U</span>
                   <span className="S LettersStyle">S</span>
                 </div>
-                <span className="live_ted_text">live tediously</span>
+                <span className="live_ted_text">POSITIVELY TEDIOUS</span>
               </span>
             </span>
           </Draggable>
-          <div className="out_soon">"it's okay to be not okay" - out soon!</div>
+          <div className="out_soon">"It's Okay To Be Not Okay" - <a href="https://linktr.ee/positivelytedious" target="_blank" rel="noreferrer">Out now!</a></div>
         </div>
       </div>
       <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalAbout} onClose={this.onCloseModal}><About/></Modal>
