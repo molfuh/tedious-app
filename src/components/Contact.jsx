@@ -8,7 +8,7 @@ export default function Contact () {
         <h1 className="modalTitle">CONTACT</h1>
         <div className="modalText">
           For questions and queries about music or shows:
-          <div>bookings@itstedious.com</div>
+          <div>its.tedious.music@gmail.com</div>
         </div>
       </>
   );
