@@ -127,7 +127,7 @@ constructor(props) {
             <a href="https://www.tiktok.com/@itstediousmusic?lang=en" target="_blank" rel="noreferrer">
               <TikTokIcon className="socialMediaIcons" />
             </a> */}
-            <a href="https://www.instagram.com/itstediousmusic/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/positivelytedious/" target="_blank" rel="noreferrer">
               <InstagramIcon className="socialMediaIcons" />
             </a>
           </div>
