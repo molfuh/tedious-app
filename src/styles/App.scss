@@ -177,42 +177,39 @@
   top: 0;
 }
 
-.buttonsIconsWrapper {
-  display: flex;
-  position: absolute;
-  left: 0;
-  z-index: 0;
-  margin: 15px 0px 0px 5px;
-  top: 0;
-}
+// .buttonsIconsWrapper {
+//   display: flex;
+//   position: absolute;
+//   left: 0;
+//   z-index: 0;
+//   margin: 15px 0px 0px 5px;
+//   top: 0;
+// }
 
-.buttons {
-  // min-width: 120px;
-  width: 20%;
-  color: white;
-  margin-left: 5px;
-  display: flex;
-  border-color: transparent;
-  background-color: transparent;
-  font-family: "Montserrat", sans-serif;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 50vw;
-  padding: 0 5px 0 0;
-  // transition: background-color 0.2s ease-in, margin-right 0.2s ease-in;
-  transition: background-color 0.2s ease-in, width 0.2s ease-in;
-  // margin-right: -17%;
-}
+// .buttons {
+//   width: 20%;
+//   color: white;
+//   margin-left: 5px;
+//   display: flex;
+//   border-color: transparent;
+//   background-color: transparent;
+//   font-family: "Montserrat", sans-serif;
+//   align-items: center;
+//   justify-content: flex-start;
+//   border-radius: 50vw;
+//   padding: 0 5px 0 0;
+//   transition: background-color 0.2s ease-in, width 0.2s ease-in;
+// }
 
-.buttons:hover {
-  background-color: white;
-  cursor: pointer;
-  margin-right: 0;
-  transition: background-color 0.2s ease-in, width 0.2s ease-in;
-  position: relative;
-  // width: 37%;
-  width: fit-content;
-}
+// .buttons:hover {
+//   background-color: white;
+//   cursor: pointer;
+//   margin-right: 0;
+//   transition: background-color 0.2s ease-in, width 0.2s ease-in;
+//   position: relative;
+//   // width: 37%;
+//   width: fit-content;
+// }
 // .bio {
 //   margin-right: -25%;
 // }
@@ -225,15 +222,15 @@
 //   margin-right: -25%;
 // }
 
-.buttons span {
-  opacity: 0;
-}
+// .buttons span {
+//   opacity: 0;
+// }
 
-.buttons:hover span {
-  color: #e5b2aa;
-  opacity: 1;
-  transition: opacity 0.2s ease-in;
-}
+// .buttons:hover span {
+//   color: #e5b2aa;
+//   opacity: 1;
+//   transition: opacity 0.2s ease-in;
+// }
 
 
 .buttons::before {
@@ -487,7 +484,6 @@
   width: 60px;
   position: relative;
   color: white;
-  /* position: absolute; */
   margin-left: 5px;
   display: flex;
   border-color: transparent;

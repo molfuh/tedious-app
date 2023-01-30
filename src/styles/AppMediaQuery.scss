@@ -1,7 +1,7 @@
 // Extra Small screens
 @media screen and (max-width: 660px) {
   .LettersStyle {
-    font-size: 4em !important;
+    font-size: 5em !important;
 }
   .live_ted_text {
     font-size: 1em !important;
@@ -42,10 +42,10 @@
 // Large screens
 @media screen and (min-width: 1200px) {
   .LettersStyle {
-    font-size: 7em !important;
+    font-size: 10em !important;
   }
   .live_ted_text {
-    font-size: 1.2em !important;
+    font-size: 2em !important;
   }
   .react-responsive-modal-modal .modalText {
     font-size: 25px !important;
