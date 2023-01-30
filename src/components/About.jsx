@@ -1,5 +1,4 @@
 import '../styles/App.scss';
-// import Tedious from './Tedious';
 
 
 export default function About () {
