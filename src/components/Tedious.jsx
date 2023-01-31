@@ -1,7 +1,7 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Draggable from 'react-draggable';
-import { ReactComponent as TikTokIcon } from '../images/tiktok.svg';
+// import { ReactComponent as TikTokIcon } from '../images/tiktok.svg';
 import React from 'react';
 import { Modal } from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
@@ -70,22 +70,22 @@ constructor(props) {
               <Listen isPlaying={this.state.isPlaying} playMusic={this.playMusic} stopMusic={this.stopMusic} pauseMusic={this.pauseMusic}/>
             </span>
             <div className="header">
-          <div className="buttonsIconsWrapper">
+              <div className="buttonsIconsWrapper">
                 <button onClick={this.handleClickAbout} className="bio buttons"><span>About</span></button>
                 {/* <button onClick={this.handleClickListen} className="listen buttons"><span>Listen</span></button> */}
                 <button onClick={this.handleClickContact} className="contact buttons"><span>Contact</span></button>
-            </div>
-          <div className="socialMediaIconsWrapper">
-              {/* <a href="https://www.youtube.com/channel/UC7SRMEAzVHVG5gHimUlEHDg" target="_blank" rel="noreferrer">
-                <YouTubeIcon className="socialMediaIcons" />
-              </a>
-              <a href="https://www.tiktok.com/@itstediousmusic?lang=en" target="_blank" rel="noreferrer">
-                <TikTokIcon className="socialMediaIcons" />
-              </a> */}
-              <a href="https://www.instagram.com/positivelytedious/" target="_blank" rel="noreferrer">
-                <InstagramIcon className="socialMediaIcons" />
-              </a>
-            </div>
+              </div>
+              <div className="socialMediaIconsWrapper">
+                {/* <a href="https://www.youtube.com/channel/UC7SRMEAzVHVG5gHimUlEHDg" target="_blank" rel="noreferrer">
+                  <YouTubeIcon className="socialMediaIcons" />
+                </a>
+                <a href="https://www.tiktok.com/@itstediousmusic?lang=en" target="_blank" rel="noreferrer">
+                  <TikTokIcon className="socialMediaIcons" />
+                </a> */}
+                <a href="https://www.instagram.com/positivelytedious/" target="_blank" rel="noreferrer" aria-label="link to instagram profile for TEDIOUS">
+                  <InstagramIcon className="socialMediaIcons" />
+                </a>
+              </div>
             </div>
             <Draggable>
               <span className="background-circle-wrapper">
@@ -99,7 +99,7 @@ constructor(props) {
                     <span className="HorizontalLines"></span>
                     <span className="HorizontalLines"></span>
                   </div>
-                  <div className="LettersStyleWrapper">
+                  <div className="LettersStyleWrapper" aria-hidden="true">
                     <span className="E LettersStyle">E</span>
                     <span className="D LettersStyle">D</span>
                     <span className="I LettersStyle">I</span>
@@ -107,16 +107,16 @@ constructor(props) {
                     <span className="U LettersStyle">U</span>
                     <span className="S LettersStyle">S</span>
                   </div>
-                  <span className="live_ted_text">POSITIVELY TEDIOUS</span>
+                  <span className="live_ted_text" aria-hidden="true">POSITIVELY TEDIOUS</span>
                 </span>
               </span>
             </Draggable>
-            <div className="out_soon">"It's Okay To Be Not Okay" - <a href="https://linktr.ee/positivelytedious" target="_blank" rel="noreferrer">Out now!</a></div>
-          </div>
+          <div className="out_soon">"It's Okay To Be Not Okay" - <a href="https://linktr.ee/positivelytedious" target="_blank" rel="noreferrer">Out now!</a></div>
         </div>
-        <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalAbout} onClose={this.onCloseModal}><About/></Modal>
-        <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalListen} onClose={this.onCloseModal}><Listen isPlaying={this.state.isPlaying} playMusic={this.playMusic} stopMusic={this.stopMusic} pauseMusic={this.pauseMusic}/></Modal>
-        <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalContact} onClose={this.onCloseModal}><Contact/></Modal>
+      </div>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalAbout} onClose={this.onCloseModal}><About/></Modal>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalListen} onClose={this.onCloseModal}><Listen isPlaying={this.state.isPlaying} playMusic={this.playMusic} stopMusic={this.stopMusic} pauseMusic={this.pauseMusic}/></Modal>
+      <Modal closeOnOverlayClick={true} closeOnEsc={true} center={true} open={this.state.openModalContact} onClose={this.onCloseModal} className="contactModal"><Contact/></Modal>
       </>
     )
   }
