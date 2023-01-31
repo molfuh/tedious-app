@@ -5,7 +5,7 @@ export default function About () {
     return (
       <>
         <h1 className="modalTitle">ABOUT</h1>
-        <div className="modalText">
+        <article className="modalText">
           TEDIOUS is a music producer, rapper, and
           singer, with pop and hip-hop influences.
           He uses a combination of rapped and sung
@@ -15,7 +15,7 @@ export default function About () {
           melodies, TEDIOUS invites listeners kick back with
           the ways of The Tribe:
           <div>No hate, no agression, no division, free admission.</div>
-        </div>
+        </article>
       </>
   );
 }

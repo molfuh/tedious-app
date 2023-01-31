@@ -9,11 +9,11 @@ export default function Listen ({isPlaying, playMusic, stopMusic, pauseMusic}) {
     <>
       {isPlaying ? 
         <div>
-        <button onClick={stopMusic} className="stopBtn musicButtons" aria-label="stop button"> <StopCircleOutlinedIcon/></button>
-        <button onClick={pauseMusic} className="pauseBtn musicButtons" aria-label="pause button"> <PauseCircleOutlineOutlinedIcon/></button>
+        <button onClick={stopMusic} className="stopBtn musicButtons" aria-label="stop music button"> <StopCircleOutlinedIcon/></button>
+        <button onClick={pauseMusic} className="pauseBtn musicButtons" aria-label="pause music button"> <PauseCircleOutlineOutlinedIcon/></button>
         </div>
         :
-        <button onClick={playMusic} className="playBtn musicButtons" aria-label="play button"> <PlayCircleOutlineIcon/></button>
+        <button onClick={playMusic} className="playBtn musicButtons" aria-label="play music button"> <PlayCircleOutlineIcon/></button>
         }
     </>
   );

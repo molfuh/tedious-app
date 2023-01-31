@@ -1,6 +1,6 @@
+@import './AppMediaQuery.scss';
 @import './index.scss';
 @import './Animations.scss';
-@import './AppMediaQuery.scss';
 @import './Keyframes.scss';
 @import './StyleVariables.scss';
 
@@ -26,16 +26,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -6%;
   width: 50vw;
   height: 50vw;
   max-width: 615px;
   max-height: 615px;
-  // min-width: 350px;
-  // min-height: 350px;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 315px;
+  min-height: 315px;
   z-index: 1;
+  margin-top: -5%;
 }
 
 .background-circle {
@@ -177,62 +175,6 @@
   top: 0;
 }
 
-// .buttonsIconsWrapper {
-//   display: flex;
-//   position: absolute;
-//   left: 0;
-//   z-index: 0;
-//   margin: 15px 0px 0px 5px;
-//   top: 0;
-// }
-
-// .buttons {
-//   width: 20%;
-//   color: white;
-//   margin-left: 5px;
-//   display: flex;
-//   border-color: transparent;
-//   background-color: transparent;
-//   font-family: "Montserrat", sans-serif;
-//   align-items: center;
-//   justify-content: flex-start;
-//   border-radius: 50vw;
-//   padding: 0 5px 0 0;
-//   transition: background-color 0.2s ease-in, width 0.2s ease-in;
-// }
-
-// .buttons:hover {
-//   background-color: white;
-//   cursor: pointer;
-//   margin-right: 0;
-//   transition: background-color 0.2s ease-in, width 0.2s ease-in;
-//   position: relative;
-//   // width: 37%;
-//   width: fit-content;
-// }
-// .bio {
-//   margin-right: -25%;
-// }
-
-// .listen {
-//   margin-right: -25%;
-// }
-
-// .contact {
-//   margin-right: -25%;
-// }
-
-// .buttons span {
-//   opacity: 0;
-// }
-
-// .buttons:hover span {
-//   color: #e5b2aa;
-//   opacity: 1;
-//   transition: opacity 0.2s ease-in;
-// }
-
-
 .buttons::before {
   font-family: "Material Icons";
   font-size: 4vh;
@@ -258,66 +200,6 @@
 .contact::before {
   content: 'alternate_email';
 }
-
-// .buttonWrapper {
-//   background-color: white;
-//   padding: 1.75% 1px;
-// }
-
-// $color: #111;
-// $primary: #FFAB9D;
-
-// .buttons {
-//   position: relative;
-//   margin: auto;
-//   padding: 19px 22px;
-//   transition: all .2s ease;
-//   &:before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     display: block;
-//     border-radius: 28px;
-//     background: rgba($primary,.5);
-//     width: 56px;
-//     height: 56px;
-//     transition: all .3s ease;
-//   }
-//   span {
-//     position: relative;
-//     font-size: 16px;
-//     line-height: 18px;
-//     font-weight: 900;
-//     letter-spacing: .25em;
-//     text-transform: uppercase;
-//     vertical-align: middle;
-//   }
-//   button {
-//     position: relative;
-//     top: 0;
-//     margin-left: 10px;
-//     fill: none;
-//     stroke-linecap: round;
-//     stroke-linejoin: round;
-//     stroke: $color;
-//     stroke-width: 2;
-//     transform: translateX(-5px);
-//     transition: all .3s ease;
-//   }
-//   &:hover {
-//     &:before {
-//       width: 100%;
-//       background: rgba($primary,1);
-//     }
-//       svg {
-//       transform: translateX(0);
-//       }
-//       &:active {
-//     transform: scale(.96);
-//       }
-//   }
-// }
 
 .loading {
   position: absolute;
@@ -347,8 +229,12 @@
   top: 40vh;
 }
 
+.modalTitle {
+  font-size: 2.5em;
+}
+
 .react-responsive-modal-modal .modalText {
-  font-size: 2vw;
+  font-size: 2em;
   line-height: 150%;
   width: 90%;
   overflow: hidden;
@@ -357,9 +243,9 @@
 .react-responsive-modal-modal {
   background: #c8afb2 !important;
   color: white;
-  width: 50vw;
   border-radius: 50%;
-  height: 50vw;
+  width: 60vw;
+  height: 60vw;
   max-width: 615px !important;
   max-height: 615px !important;
   min-width: 300px;
@@ -395,34 +281,6 @@
   fill: white;
 }
 
-// .play_btn_wrapper {
-//   height: 100%;
-//   width: 100%;
-//   background-color: red;
-// }
-
-// .playBtn {
-//   border-color: #c8afb2;
-//   width: 0;
-//   background: #c8afb2;
-//   border-right: 0;
-//   height: 0;
-//   border-top: 45px solid #c8afb2;
-//   border-bottom: 45px solid #c8afb2;
-//   border-left: 60px solid white;
-// }
-
-// .stopBtn {
-//   border-color: #c8afb2;
-//   width: 0;
-//   background: #c8afb2;
-//   border-right: 0;
-//   height: 0;
-//   border-top: 45px solid #c8afb2;
-//   border-bottom: 45px solid #c8afb2;
-//   border-left: 60px solid white;
-// }
-
 .musicButtons {
   background: unset;
   border: unset;
@@ -442,21 +300,15 @@
   z-index: 1;
 }
 
-
-// NEW:
-
 .buttonsIconsWrapper {
   display: flex;
   position: relative;
-  /* left: unset; */
   z-index: 0;
   margin: unset;
-  /* width: unset; */
   top: 0;
 }
 
 .socialMediaIconsWrapper {
-  /* right: 0; */
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -465,22 +317,6 @@
   margin: unset;
   top: 0;
 }
-
-// .buttons {
-//   width: fit-content;
-//   color: white;
-//   /* position: absolute; */
-//   margin-left: 5px;
-//   display: flex;
-//   border-color: transparent;
-//   background-color: transparent;
-//   font-family: "Montserrat", sans-serif;
-//   align-items: center;
-//   justify-content: flex-start;
-//   border-radius: 50vw;
-//   padding: 0 5px 0 0;
-//   transition: background-color 0.2s ease-in, width 0.2s ease-in;
-// }
 
 .buttons {
   width: 60px;
@@ -501,7 +337,6 @@
 .buttons:hover {
   background-color: white;
   cursor: pointer;
-  /* margin-right: 0; */
   transition: all 0.2s ease-in;
   position: relative;
   width: -moz-fit-content;
@@ -517,13 +352,12 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   position: absolute;
   top: 0;
   height: fit-content;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
 }
 
 .buttons:hover span {
