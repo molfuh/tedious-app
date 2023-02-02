@@ -16,9 +16,6 @@
 }
 
 .appWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
@@ -28,8 +25,8 @@
   justify-content: center;
   width: 50vw;
   height: 50vw;
-  max-width: 615px;
-  max-height: 615px;
+  max-width: 550px;
+  max-height: 550px;
   min-width: 315px;
   min-height: 315px;
   z-index: 1;

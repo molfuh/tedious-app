@@ -1,11 +1,11 @@
 // Large screens
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .LettersStyle {
-    font-size: 10em !important;
+    font-size: 9em !important;
   }
   .live_ted_text {
     font-size: 1.75em !important;
-    letter-spacing: 0.33em !important;
+    letter-spacing: 0.25em !important;
   }
   .react-responsive-modal-modal .modalText {
     font-size: 25px !important;
@@ -22,7 +22,7 @@
   }
 }
 
-// Extra Small screens
+// Small screens
 @media screen and (max-width: 660px) {
   .LettersStyle {
     font-size: 5em !important;
@@ -61,6 +61,28 @@
   }
   .buttons:hover span {
     position: absolute !important;
+  }
+}
+
+// Extra Small Screens
+@media screen and (max-width: 360px) {
+  .background-circle-wrapper {
+      width: 250px !important;
+      height: 250px !important;
+      min-width: unset !important;
+      min-height: unset !important;
+  }
+  .LettersStyle {
+      font-size: 4em !important;
+  }
+  .live_ted_text {
+      font-size: 0.85em !important;
+  }
+  .out_soon {
+      font-size: 1.25em !important;
+  }
+  .modalTitle {
+  font-size: 1.5em !important;
   }
 }
 
