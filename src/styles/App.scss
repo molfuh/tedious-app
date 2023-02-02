@@ -7,18 +7,20 @@
 .tedious_bg {
   background-color: #6f3f59;
   background-image: url('../images/TediousBgImg.jpg');
-  height: 100%;
-  width: 100%;
+  // height: 100%;
+  // width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.appWrapper {
-  height: 100vh;
-  width: 100vw;
-}
+// .appWrapper {
+//   height: 100vh;
+//   width: 100vw;
+// }
 
 .background-circle-wrapper {
   display: flex;
