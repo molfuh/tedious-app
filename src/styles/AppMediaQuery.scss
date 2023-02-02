@@ -24,6 +24,9 @@
 
 // Small screens
 @media screen and (max-width: 660px) {
+  .background-circle-wrapper {
+    margin-top: -15% !important;
+  }
   .LettersStyle {
     font-size: 5em !important;
     letter-spacing: 0 !important;
